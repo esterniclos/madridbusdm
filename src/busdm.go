@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-    // "encoding/json"
+    "encoding/json"
  //   "log"
     "net/http"
     "bytes"
@@ -10,6 +10,7 @@ import (
     "os"
     "io"
     "crypto/tls"
+    "strconv"
 )
 
 
@@ -18,7 +19,7 @@ import (
 const cred_file string = "credentials.txt"
 
 
-// Struct to store EMT  response 
+// Struct to store EMT  response
 type jsonEmt struct {
 	Arrives []struct {
 		BusDistance     int     `json:"busDistance"`
@@ -76,20 +77,28 @@ func readCredentials(filename string) st_credentials{
 }
 
 // Get EMT times
-func getStopTime( IdStop int){
+
+type GetStopTimeRequest struct {
+    idClient string
+    passKey string
+    cultureInfo string
+    idStop string
+}
+
+func getStopTime( IdStop int) string{
 
 
     creds := readCredentials(cred_file)
     url := "https://openbus.emtmadrid.es:9443/emt-proxy-server/last/geo/GetArriveStop.php"
     fmt.Println("URL:>", url)
-     var jsonStr = []byte(`
-{
-    "idClient": "to be read",
-    "passKey": "to be read",
-    "idStop": "608"
+    jsonreq := GetStopTimeRequest{creds.ClientID,
+                              creds.Password,
+                              "ES",
+                              strconv.Itoa(IdStop)}
+    fmt.Println(jsonreq)
+    jsonStr, err := json.Marshal(jsonreq)
 
-}`)
-
+    fmt.Printf("JSON:> %s\n", jsonStr)
     req, err := http.NewRequest("POST", url, bytes.NewBuffer(jsonStr))
     req.Header.Set("X-Custom-Header", "busdm")
     req.Header.Set("Content-Type", "application/json")
@@ -110,16 +119,16 @@ func getStopTime( IdStop int){
     fmt.Println("response Headers:", resp.Header)
     body, _ := ioutil.ReadAll(resp.Body)
     fmt.Println("response Body:", string(body))
-
+    return string(body)
 }
 
 
 
 // Response handler
 func handler(w http.ResponseWriter, r *http.Request) {
-    fmt.Fprintf(w, "Hi there, I love %s!", r.URL.Path[1:])
+    body := getStopTime(608);
+    fmt.Fprintf(w, "Hi there, I love %s!", body)
     //getStopArrivalTime (608);
-    getStopTime(608);
 }
 
 func main() {
