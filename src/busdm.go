@@ -7,12 +7,15 @@ import (
     "net/http"
     "bytes"
 	"io/ioutil"
+    "os"
+    "io"
+    "crypto/tls"
 )
 
 
 
 // Constant
-cred_file string = "credentials.txt"
+const cred_file string = "credentials.txt"
 
 
 // Struct to store EMT  response 
@@ -39,16 +42,15 @@ type st_walkingdistance struct {
 }
 
 type st_credentials struct {
-    ClientID String
-    Password String
-}  st_credentials;
+    ClientID string
+    Password string
+}
 
 
 
 // Opens credentials filename and stores its values.
-func readCredentials{
-
-	
+func readCredentials(filename string) st_credentials{
+    var cred st_credentials;
 
     fmt.Println ("Reading Credentials", filename)
     // open input file
@@ -65,44 +67,39 @@ func readCredentials{
 
 
    // read Credentials
-   n,err := fmt.Fscanf(fi, "%d %d \n", &cred.ClientID, &cred.Password) 
+   n,err := fmt.Fscanf(fi, "%s %s \n", &cred.ClientID, &cred.Password)
    // Error line:
    if (err != nil && err != io.EOF ) ||(n!=2){
-            panic(err)            
+            panic(err)
         }
-   
-   
-
+    return cred;
 }
 
 // Get EMT times
 func getStopTime( IdStop int){
 
 
-    var url string ; 
-    url = "https://openbus.emtmadrid.es:9443/emt-proxy-server/last/geo/GetArriveStop.php"
-  
-  
+    creds := readCredentials(cred_file)
+    url := "https://openbus.emtmadrid.es:9443/emt-proxy-server/last/geo/GetArriveStop.php"
     fmt.Println("URL:>", url)
-
      var jsonStr = []byte(`
 {
-    "idClient": "to be read", 
+    "idClient": "to be read",
     "passKey": "to be read",
     "idStop": "608"
 
 }`)
 
-
-    
     req, err := http.NewRequest("POST", url, bytes.NewBuffer(jsonStr))
     req.Header.Set("X-Custom-Header", "busdm")
     req.Header.Set("Content-Type", "application/json")
 
 
 
-    cfg := &tls.Config{InsecureSkipVerify: true}
-    client := &http.Client{}
+    tr := &http.Transport{
+        TLSClientConfig: &tls.Config{InsecureSkipVerify : true},
+    }
+    client := &http.Client{Transport: tr}
     resp, err := client.Do(req)
     if err != nil {
         panic(err)
@@ -113,7 +110,7 @@ func getStopTime( IdStop int){
     fmt.Println("response Headers:", resp.Header)
     body, _ := ioutil.ReadAll(resp.Body)
     fmt.Println("response Body:", string(body))
-    
+
 }
 
 
@@ -121,7 +118,8 @@ func getStopTime( IdStop int){
 // Response handler
 func handler(w http.ResponseWriter, r *http.Request) {
     fmt.Fprintf(w, "Hi there, I love %s!", r.URL.Path[1:])
-    getStopArrivalTime (608);
+    //getStopArrivalTime (608);
+    getStopTime(608);
 }
 
 func main() {
