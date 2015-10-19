@@ -11,6 +11,9 @@ import (
 
 
 
+// Constant
+cred_file string = "credentials.txt"
+
 
 // Struct to store EMT  response 
 type jsonEmt struct {
@@ -30,13 +33,50 @@ type jsonEmt struct {
 
 
 
-type walkingdistance struct {
+type st_walkingdistance struct {
     StopId int
     SecondsWalking int
 }
 
+type st_credentials struct {
+    ClientID String
+    Password String
+}  st_credentials;
+
+
+
+// Opens credentials filename and stores its values.
+func readCredentials{
+
+	
+
+    fmt.Println ("Reading Credentials", filename)
+    // open input file
+    fi, err := os.Open(filename)
+    if err != nil {
+        panic(err)
+    }
+    // close fi on exit and check for its returned error
+    defer func() {
+        if err := fi.Close(); err != nil {
+            panic(err)
+        }
+    }()
+
+
+   // read Credentials
+   n,err := fmt.Fscanf(fi, "%d %d \n", &cred.ClientID, &cred.Password) 
+   // Error line:
+   if (err != nil && err != io.EOF ) ||(n!=2){
+            panic(err)            
+        }
+   
+   
+
+}
+
 // Get EMT times
-func getStopArrivalTime( IdStop int){
+func getStopTime( IdStop int){
 
 
     var url string ; 
