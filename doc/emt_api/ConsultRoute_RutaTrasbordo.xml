@@ -1,0 +1,2142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Resultado xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="">
+  <CodError>300</CodError>
+  <Description>La recuperación de rutas ha sido correcta.</Description>
+  <ListRouteData>
+    <RouteData>
+      <IdDescripcion>PTA.SOL-LA ELIPA * PZA.TIRSO MOLINA-DIEGO DE LEON</IdDescripcion>
+      <IdLinea>15 * 26</IdLinea>
+      <DescriptionRouteData>
+        <DescriptionDate>Fecha:3/5/2010</DescriptionDate>
+        <DescriptionInitTime>Hora de Salida:16:00</DescriptionInitTime>
+        <DescriptionEstimateTimeArrival>Hora estimada de llegada:16:31</DescriptionEstimateTimeArrival>
+        <Transfers>1</Transfers>
+        <LongJourney>31</LongJourney>
+      </DescriptionRouteData>
+      <ListSectionRoute>
+        <Section>
+          <Order>0</Order>
+          <WalkingLeg>
+            <SourceWalkingLeg>
+              <Name>Alcal� , 10</Name>
+              <CoordinatesXY>
+                <X>40,4197974646789</X>
+                <Y>-3,69770714138019</Y>
+              </CoordinatesXY>
+              <RouteDescription>Caminar 2 min</RouteDescription>
+            </SourceWalkingLeg>
+            <DestinationWalkingLeg>
+              <Name>ALCALA-CEDACEROS</Name>
+              <CoordinatesXY>
+                <X>40,4200938371083</X>
+                <Y>-3,69636642338843</Y>
+              </CoordinatesXY>
+            </DestinationWalkingLeg>
+          </WalkingLeg>
+        </Section>
+        <Section>
+          <Order>1</Order>
+          <BusLeg>
+            <SourceBusLeg>
+              <IdStop>2002</IdStop>
+              <NameStop>ALCALA-CEDACEROS</NameStop>
+              <NameStreet>Alcalá, 32</NameStreet>
+              <RouteDescription>14 min en autobús hasta</RouteDescription>
+              <CoordinatesXY>
+                <X>40,4200938371083</X>
+                <Y>-3,69636642338843</Y>
+              </CoordinatesXY>
+              <LinesOfBus>
+                <Line>
+                  <IdLine>15</IdLine>
+                  <HeaderA>PUERTA DEL SOL</HeaderA>
+                  <HeaderB>LA ELIPA</HeaderB>
+                </Line>
+              </LinesOfBus>
+            </SourceBusLeg>
+            <DestinationBusLeg>
+              <IdStop>751</IdStop>
+              <NameStop>ALCALA-AGUIRRE</NameStop>
+              <NameStreet>Alcalá, 70</NameStreet>
+              <CoordinatesXY>
+                <X>40,424074441153</X>
+                <Y>-3,67995108821912</Y>
+              </CoordinatesXY>
+            </DestinationBusLeg>
+          </BusLeg>
+        </Section>
+        <Section>
+          <Order>2</Order>
+          <WalkingLeg>
+            <SourceWalkingLeg>
+              <Name>ALCALA-AGUIRRE</Name>
+              <CoordinatesXY>
+                <X>40,424074441153</X>
+                <Y>-3,67995108821912</Y>
+              </CoordinatesXY>
+              <RouteDescription>Caminar 1 min</RouteDescription>
+            </SourceWalkingLeg>
+            <DestinationWalkingLeg>
+              <Name>NARVAEZ-AV.FELIPE II</Name>
+              <CoordinatesXY>
+                <X>40,4259002048851</X>
+                <Y>-3,67432275160954</Y>
+              </CoordinatesXY>
+            </DestinationWalkingLeg>
+          </WalkingLeg>
+        </Section>
+        <Section>
+          <Order>3</Order>
+          <BusLeg>
+            <SourceBusLeg>
+              <IdStop>2215</IdStop>
+              <NameStop>NARVAEZ-AV.FELIPE II</NameStop>
+              <NameStreet>Narvaez, 5 con Av. de Felipe II</NameStreet>
+              <RouteDescription>11 min en autobús hasta</RouteDescription>
+              <CoordinatesXY>
+                <X>40,4259002048851</X>
+                <Y>-3,67432275160954</Y>
+              </CoordinatesXY>
+              <LinesOfBus>
+                <Line>
+                  <IdLine>26</IdLine>
+                  <HeaderA>PLAZA DE TIRSO DE MOLINA</HeaderA>
+                  <HeaderB>DIEGO DE LEON</HeaderB>
+                </Line>
+              </LinesOfBus>
+            </SourceBusLeg>
+            <DestinationBusLeg>
+              <IdStop>2221</IdStop>
+              <NameStop>CONDE DE PEÑALVER-J.ORTEGA Y GASSET</NameStop>
+              <NameStreet>Conde de Peñalver, 50</NameStreet>
+              <CoordinatesXY>
+                <X>40,4320381608233</X>
+                <Y>-3,67384173734584</Y>
+              </CoordinatesXY>
+            </DestinationBusLeg>
+          </BusLeg>
+        </Section>
+        <Section>
+          <Order>4</Order>
+          <WalkingLeg>
+            <SourceWalkingLeg>
+              <Name>CONDE DE PEÑALVER-J.ORTEGA Y GASSET</Name>
+              <CoordinatesXY>
+                <X>40,4320381608233</X>
+                <Y>-3,67384173734584</Y>
+              </CoordinatesXY>
+              <RouteDescription>Caminar 3 min</RouteDescription>
+            </SourceWalkingLeg>
+            <DestinationWalkingLeg>
+              <Name>B�jar , 2</Name>
+              <CoordinatesXY>
+                <X>40,4374776330782</X>
+                <Y>-3,67263444878136</Y>
+              </CoordinatesXY>
+            </DestinationWalkingLeg>
+          </WalkingLeg>
+        </Section>
+      </ListSectionRoute>
+      <ListsRouteSection>
+        <ListRouteSection>
+          <Order>1</Order>
+          <ListRoutes>
+            <Routes>
+              <IdLine>015</IdLine>
+              <SecDetail>10</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>2002</Node>
+              <Distance>494</Distance>
+              <DistStopPrev>85</DistStopPrev>
+              <Name>ALCALA-CEDACEROS</Name>
+              <PosxNode>40,4200938371083</PosxNode>
+              <PosyNode>-3,69636642338843</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>015</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>1962</Node>
+              <Distance>569</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4205126265717</PosxNode>
+              <PosyNode>-3,69563990951492</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>015</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>753</Node>
+              <Distance>602</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4206228979598</PosxNode>
+              <PosyNode>-3,69528034374374</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>015</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>517</Node>
+              <Distance>638</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4207334091125</PosxNode>
+              <PosyNode>-3,69488070123584</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>015</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>518</Node>
+              <Distance>655</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4207796627741</PosxNode>
+              <PosyNode>-3,69467960812442</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>015</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>519</Node>
+              <Distance>684</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4208536495036</PosxNode>
+              <PosyNode>-3,69436092317038</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>015</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>520</Node>
+              <Distance>712</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4209096325445</PosxNode>
+              <PosyNode>-3,69403969495023</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>015</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>521</Node>
+              <Distance>799</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,420972801261</PosxNode>
+              <PosyNode>-3,69251973115091</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>015</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>522</Node>
+              <Distance>844</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4209577767847</PosxNode>
+              <PosyNode>-3,69201977879269</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>015</IdLine>
+              <SecDetail>10</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>70</Node>
+              <Distance>880</Distance>
+              <DistStopPrev>36</DistStopPrev>
+              <Name>PZA.DE CIBELES</Name>
+              <PosxNode>40,4209392870837</PosxNode>
+              <PosyNode>-3,69209856686163</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>015</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>523</Node>
+              <Distance>887</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4209577767847</PosxNode>
+              <PosyNode>-3,69201977879269</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>015</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>524</Node>
+              <Distance>917</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4209599280698</PosxNode>
+              <PosyNode>-3,69166027610995</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>015</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>527</Node>
+              <Distance>938</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4210333778504</PosxNode>
+              <PosyNode>-3,69142998928739</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>015</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>528</Node>
+              <Distance>1004</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4213973884249</PosxNode>
+              <PosyNode>-3,69081957332339</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>015</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>529</Node>
+              <Distance>1013</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4214069955299</PosxNode>
+              <PosyNode>-3,69071947551816</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>015</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>530</Node>
+              <Distance>1052</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4214817526277</PosxNode>
+              <PosyNode>-3,69026994666353</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>015</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>531</Node>
+              <Distance>1103</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4215663533042</PosxNode>
+              <PosyNode>-3,6896802425075</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>015</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>532</Node>
+              <Distance>1129</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4215952276368</PosxNode>
+              <PosyNode>-3,68937051805199</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>015</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>534</Node>
+              <Distance>1209</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4215598377319</PosxNode>
+              <PosyNode>-3,68774933400286</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>015</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>538</Node>
+              <Distance>1271</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4215061934282</PosxNode>
+              <PosyNode>-3,68768041847579</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>015</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>539</Node>
+              <Distance>1279</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4215061934282</PosxNode>
+              <PosyNode>-3,68768041847579</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>015</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>540</Node>
+              <Distance>1309</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4215082191245</PosxNode>
+              <PosyNode>-3,68733977187368</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>015</IdLine>
+              <SecDetail>10</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>162</Node>
+              <Distance>1335</Distance>
+              <DistStopPrev>26</DistStopPrev>
+              <Name>PUERTA DE ALCALA</Name>
+              <PosxNode>40,4214936344104</PosxNode>
+              <PosyNode>-3,68676202166523</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>015</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>541</Node>
+              <Distance>1337</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4216897062476</PosxNode>
+              <PosyNode>-3,68712000797866</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>015</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>542</Node>
+              <Distance>1418</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,422099744506</PosxNode>
+              <PosyNode>-3,68634028501103</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>015</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>543</Node>
+              <Distance>1440</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,422146277181</PosxNode>
+              <PosyNode>-3,68608967556749</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>015</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>742</Node>
+              <Distance>1488</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4222666529742</PosxNode>
+              <PosyNode>-3,68554040241005</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>015</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>746</Node>
+              <Distance>1537</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,422387033155</PosxNode>
+              <PosyNode>-3,68498994853672</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>015</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>747</Node>
+              <Distance>1545</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4224074239376</PosxNode>
+              <PosyNode>-3,68458936502405</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>015</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>748</Node>
+              <Distance>1571</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4224074239376</PosxNode>
+              <PosyNode>-3,68458936502405</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>015</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>749</Node>
+              <Distance>1612</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4225002370714</PosxNode>
+              <PosyNode>-3,68412939640189</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>015</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>5729</Node>
+              <Distance>1647</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4226017013819</PosxNode>
+              <PosyNode>-3,68372963282419</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>015</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>5731</Node>
+              <Distance>1684</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,422658240249</PosxNode>
+              <PosyNode>-3,68330937383814</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>015</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>5732</Node>
+              <Distance>1711</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4227231315771</PosxNode>
+              <PosyNode>-3,68300000587814</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>015</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>5733</Node>
+              <Distance>1837</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4232981947847</PosxNode>
+              <PosyNode>-3,68173034907482</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>015</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>5734</Node>
+              <Distance>1885</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4235889058357</PosxNode>
+              <PosyNode>-3,68131951966234</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>015</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>5737</Node>
+              <Distance>1904</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4236980705528</PosxNode>
+              <PosyNode>-3,6811402619863</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>015</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>5738</Node>
+              <Distance>1975</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,424026638494</PosxNode>
+              <PosyNode>-3,68041977865542</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>015</IdLine>
+              <SecDetail>10</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>751</Node>
+              <Distance>2012</Distance>
+              <DistStopPrev>37</DistStopPrev>
+              <Name>ALCALA-AGUIRRE</Name>
+              <PosxNode>40,424074441153</PosxNode>
+              <PosyNode>-3,67995108821912</PosyNode>
+            </Routes>
+          </ListRoutes>
+        </ListRouteSection>
+        <ListRouteSection>
+          <Order>3</Order>
+          <ListRoutes>
+            <Routes>
+              <IdLine>026</IdLine>
+              <SecDetail>10</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>2215</Node>
+              <Distance>4531</Distance>
+              <DistStopPrev>12</DistStopPrev>
+              <Name>NARVAEZ-AV.FELIPE II</Name>
+              <PosxNode>40,4259002048851</PosxNode>
+              <PosyNode>-3,67432275160954</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>026</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>9151</Node>
+              <Distance>4543</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4260155894116</PosxNode>
+              <PosyNode>-3,67461979745206</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>026</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>9152</Node>
+              <Distance>4613</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4266466322996</PosxNode>
+              <PosyNode>-3,67454947604054</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>026</IdLine>
+              <SecDetail>10</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>2217</Node>
+              <Distance>4703</Distance>
+              <DistStopPrev>90</DistStopPrev>
+              <Name>CONDE DE PEÑALVER-HERMOSILLA</Name>
+              <PosxNode>40,4274505626091</PosxNode>
+              <PosyNode>-3,6741849807229</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>026</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>9153</Node>
+              <Distance>4739</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,427782296058</PosxNode>
+              <PosyNode>-3,67445943783306</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>026</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>9154</Node>
+              <Distance>4892</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4291613749146</PosxNode>
+              <PosyNode>-3,67433999762103</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>026</IdLine>
+              <SecDetail>10</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>2219</Node>
+              <Distance>4924</Distance>
+              <DistStopPrev>32</DistStopPrev>
+              <Name>CONDE DE PEÑALVER-AYALA</Name>
+              <PosxNode>40,4294332594547</PosxNode>
+              <PosyNode>-3,67406330970214</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>026</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>9156</Node>
+              <Distance>5047</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4305494687401</PosxNode>
+              <PosyNode>-3,67421946401638</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>026</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>9157</Node>
+              <Distance>5179</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4317393063242</PosxNode>
+              <PosyNode>-3,67410873570015</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>026</IdLine>
+              <SecDetail>10</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>2221</Node>
+              <Distance>5214</Distance>
+              <DistStopPrev>35</DistStopPrev>
+              <Name>CONDE DE PEÑALVER-J.ORTEGA Y GASSET</Name>
+              <PosxNode>40,4320381608233</PosxNode>
+              <PosyNode>-3,67384173734584</PosyNode>
+            </Routes>
+          </ListRoutes>
+        </ListRouteSection>
+      </ListsRouteSection>
+    </RouteData>
+    <RouteData>
+      <IdDescripcion>PZA.CALLAO-LOS MOLINOS * PZA.TIRSO MOLINA-DIEGO DE LEON</IdDescripcion>
+      <IdLinea>146 * 26</IdLinea>
+      <DescriptionRouteData>
+        <DescriptionDate>Fecha:3/5/2010</DescriptionDate>
+        <DescriptionInitTime>Hora de Salida:16:00</DescriptionInitTime>
+        <DescriptionEstimateTimeArrival>Hora estimada de llegada:16:34</DescriptionEstimateTimeArrival>
+        <Transfers>1</Transfers>
+        <LongJourney>34</LongJourney>
+      </DescriptionRouteData>
+      <ListSectionRoute>
+        <Section>
+          <Order>0</Order>
+          <WalkingLeg>
+            <SourceWalkingLeg>
+              <Name>Alcal� , 10</Name>
+              <CoordinatesXY>
+                <X>40,4197974646789</X>
+                <Y>-3,69770714138019</Y>
+              </CoordinatesXY>
+              <RouteDescription>Caminar 3 min</RouteDescription>
+            </SourceWalkingLeg>
+            <DestinationWalkingLeg>
+              <Name>GRAN VIA-CLAVEL</Name>
+              <CoordinatesXY>
+                <X>40,4213988389725</X>
+                <Y>-3,69807731911179</Y>
+              </CoordinatesXY>
+            </DestinationWalkingLeg>
+          </WalkingLeg>
+        </Section>
+        <Section>
+          <Order>1</Order>
+          <BusLeg>
+            <SourceBusLeg>
+              <IdStop>5138</IdStop>
+              <NameStop>GRAN VIA-CLAVEL</NameStop>
+              <NameStreet>Gran Vía, 11</NameStreet>
+              <RouteDescription>14 min en autobús hasta</RouteDescription>
+              <CoordinatesXY>
+                <X>40,4213988389725</X>
+                <Y>-3,69807731911179</Y>
+              </CoordinatesXY>
+              <LinesOfBus>
+                <Line>
+                  <IdLine>146</IdLine>
+                  <HeaderA>PLAZA DEL CALLAO</HeaderA>
+                  <HeaderB>LOS MOLINOS</HeaderB>
+                </Line>
+              </LinesOfBus>
+            </SourceBusLeg>
+            <DestinationBusLeg>
+              <IdStop>751</IdStop>
+              <NameStop>ALCALA-AGUIRRE</NameStop>
+              <NameStreet>Alcalá, 70</NameStreet>
+              <CoordinatesXY>
+                <X>40,424074441153</X>
+                <Y>-3,67995108821912</Y>
+              </CoordinatesXY>
+            </DestinationBusLeg>
+          </BusLeg>
+        </Section>
+        <Section>
+          <Order>2</Order>
+          <WalkingLeg>
+            <SourceWalkingLeg>
+              <Name>ALCALA-AGUIRRE</Name>
+              <CoordinatesXY>
+                <X>40,424074441153</X>
+                <Y>-3,67995108821912</Y>
+              </CoordinatesXY>
+              <RouteDescription>Caminar 3 min</RouteDescription>
+            </SourceWalkingLeg>
+            <DestinationWalkingLeg>
+              <Name>NARVAEZ-AV.FELIPE II</Name>
+              <CoordinatesXY>
+                <X>40,4259002048851</X>
+                <Y>-3,67432275160954</Y>
+              </CoordinatesXY>
+            </DestinationWalkingLeg>
+          </WalkingLeg>
+        </Section>
+        <Section>
+          <Order>3</Order>
+          <BusLeg>
+            <SourceBusLeg>
+              <IdStop>2215</IdStop>
+              <NameStop>NARVAEZ-AV.FELIPE II</NameStop>
+              <NameStreet>Narvaez, 5 con Av. de Felipe II</NameStreet>
+              <RouteDescription>11 min en autobús hasta</RouteDescription>
+              <CoordinatesXY>
+                <X>40,4259002048851</X>
+                <Y>-3,67432275160954</Y>
+              </CoordinatesXY>
+              <LinesOfBus>
+                <Line>
+                  <IdLine>26</IdLine>
+                  <HeaderA>PLAZA DE TIRSO DE MOLINA</HeaderA>
+                  <HeaderB>DIEGO DE LEON</HeaderB>
+                </Line>
+              </LinesOfBus>
+            </SourceBusLeg>
+            <DestinationBusLeg>
+              <IdStop>2221</IdStop>
+              <NameStop>CONDE DE PEÑALVER-J.ORTEGA Y GASSET</NameStop>
+              <NameStreet>Conde de Peñalver, 50</NameStreet>
+              <CoordinatesXY>
+                <X>40,4320381608233</X>
+                <Y>-3,67384173734584</Y>
+              </CoordinatesXY>
+            </DestinationBusLeg>
+          </BusLeg>
+        </Section>
+        <Section>
+          <Order>4</Order>
+          <WalkingLeg>
+            <SourceWalkingLeg>
+              <Name>CONDE DE PEÑALVER-J.ORTEGA Y GASSET</Name>
+              <CoordinatesXY>
+                <X>40,4320381608233</X>
+                <Y>-3,67384173734584</Y>
+              </CoordinatesXY>
+              <RouteDescription>Caminar 3 min</RouteDescription>
+            </SourceWalkingLeg>
+            <DestinationWalkingLeg>
+              <Name>B�jar , 2</Name>
+              <CoordinatesXY>
+                <X>40,4374776330782</X>
+                <Y>-3,67263444878136</Y>
+              </CoordinatesXY>
+            </DestinationWalkingLeg>
+          </WalkingLeg>
+        </Section>
+      </ListSectionRoute>
+      <ListsRouteSection>
+        <ListRouteSection>
+          <Order>1</Order>
+          <ListRoutes>
+            <Routes>
+              <IdLine>146</IdLine>
+              <SecDetail>10</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>5138</Node>
+              <Distance>1036</Distance>
+              <DistStopPrev>39</DistStopPrev>
+              <Name>GRAN VIA-CLAVEL</Name>
+              <PosxNode>40,4213988389725</PosxNode>
+              <PosyNode>-3,69807731911179</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>146</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>512</Node>
+              <Distance>1128</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4209508139335</PosxNode>
+              <PosyNode>-3,69618076324358</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>146</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>514</Node>
+              <Distance>1205</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4208356267157</PosxNode>
+              <PosyNode>-3,69586012986359</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>146</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>515</Node>
+              <Distance>1234</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4207467406867</PosxNode>
+              <PosyNode>-3,69566000256591</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>146</IdLine>
+              <SecDetail>10</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>164</Node>
+              <Distance>1238</Distance>
+              <DistStopPrev>4</DistStopPrev>
+              <Name>GRAN VIA-ALCALA</Name>
+              <PosxNode>40,4207454709714</PosxNode>
+              <PosyNode>-3,69587098854619</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>146</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>751</Node>
+              <Distance>1254</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4207112457446</PosxNode>
+              <PosyNode>-3,69557005078009</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>146</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>752</Node>
+              <Distance>1263</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4206228979598</PosxNode>
+              <PosyNode>-3,69528034374374</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>146</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>753</Node>
+              <Distance>1289</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4206228979598</PosxNode>
+              <PosyNode>-3,69528034374374</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>146</IdLine>
+              <SecDetail>10</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>90</Node>
+              <Distance>1321</Distance>
+              <DistStopPrev>32</DistStopPrev>
+              <Name>ALCALA-MINISTERIO EDUCACION</Name>
+              <PosxNode>40,4204545995338</PosxNode>
+              <PosyNode>-3,69480239173841</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>146</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>517</Node>
+              <Distance>1326</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4207334091125</PosxNode>
+              <PosyNode>-3,69488070123584</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>146</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>518</Node>
+              <Distance>1343</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4207796627741</PosxNode>
+              <PosyNode>-3,69467960812442</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>146</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>519</Node>
+              <Distance>1372</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4208536495036</PosxNode>
+              <PosyNode>-3,69436092317038</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>146</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>520</Node>
+              <Distance>1400</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4209096325445</PosxNode>
+              <PosyNode>-3,69403969495023</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>146</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>521</Node>
+              <Distance>1486</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,420972801261</PosxNode>
+              <PosyNode>-3,69251973115091</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>146</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>522</Node>
+              <Distance>1532</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4209577767847</PosxNode>
+              <PosyNode>-3,69201977879269</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>146</IdLine>
+              <SecDetail>10</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>70</Node>
+              <Distance>1568</Distance>
+              <DistStopPrev>36</DistStopPrev>
+              <Name>PZA.DE CIBELES</Name>
+              <PosxNode>40,4209392870837</PosxNode>
+              <PosyNode>-3,69209856686163</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>146</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>523</Node>
+              <Distance>1575</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4209577767847</PosxNode>
+              <PosyNode>-3,69201977879269</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>146</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>524</Node>
+              <Distance>1605</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4209599280698</PosxNode>
+              <PosyNode>-3,69166027610995</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>146</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>527</Node>
+              <Distance>1626</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4210333778504</PosxNode>
+              <PosyNode>-3,69142998928739</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>146</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>528</Node>
+              <Distance>1692</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4213973884249</PosxNode>
+              <PosyNode>-3,69081957332339</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>146</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>529</Node>
+              <Distance>1701</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4214069955299</PosxNode>
+              <PosyNode>-3,69071947551816</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>146</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>530</Node>
+              <Distance>1740</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4214817526277</PosxNode>
+              <PosyNode>-3,69026994666353</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>146</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>531</Node>
+              <Distance>1791</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4215663533042</PosxNode>
+              <PosyNode>-3,6896802425075</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>146</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>532</Node>
+              <Distance>1817</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4215952276368</PosxNode>
+              <PosyNode>-3,68937051805199</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>146</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>534</Node>
+              <Distance>1897</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4215598377319</PosxNode>
+              <PosyNode>-3,68774933400286</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>146</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>538</Node>
+              <Distance>1959</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4215061934282</PosxNode>
+              <PosyNode>-3,68768041847579</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>146</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>539</Node>
+              <Distance>1967</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4215061934282</PosxNode>
+              <PosyNode>-3,68768041847579</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>146</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>540</Node>
+              <Distance>1997</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4215082191245</PosxNode>
+              <PosyNode>-3,68733977187368</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>146</IdLine>
+              <SecDetail>10</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>162</Node>
+              <Distance>2022</Distance>
+              <DistStopPrev>25</DistStopPrev>
+              <Name>PUERTA DE ALCALA</Name>
+              <PosxNode>40,4214936344104</PosxNode>
+              <PosyNode>-3,68676202166523</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>146</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>541</Node>
+              <Distance>2025</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4216897062476</PosxNode>
+              <PosyNode>-3,68712000797866</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>146</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>542</Node>
+              <Distance>2106</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,422099744506</PosxNode>
+              <PosyNode>-3,68634028501103</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>146</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>543</Node>
+              <Distance>2128</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,422146277181</PosxNode>
+              <PosyNode>-3,68608967556749</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>146</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>742</Node>
+              <Distance>2176</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4222666529742</PosxNode>
+              <PosyNode>-3,68554040241005</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>146</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>746</Node>
+              <Distance>2225</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,422387033155</PosxNode>
+              <PosyNode>-3,68498994853672</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>146</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>747</Node>
+              <Distance>2233</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4224074239376</PosxNode>
+              <PosyNode>-3,68458936502405</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>146</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>748</Node>
+              <Distance>2259</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4224074239376</PosxNode>
+              <PosyNode>-3,68458936502405</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>146</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>749</Node>
+              <Distance>2300</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4225002370714</PosxNode>
+              <PosyNode>-3,68412939640189</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>146</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>5729</Node>
+              <Distance>2335</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4226017013819</PosxNode>
+              <PosyNode>-3,68372963282419</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>146</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>5731</Node>
+              <Distance>2372</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,422658240249</PosxNode>
+              <PosyNode>-3,68330937383814</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>146</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>5732</Node>
+              <Distance>2399</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4227231315771</PosxNode>
+              <PosyNode>-3,68300000587814</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>146</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>5733</Node>
+              <Distance>2525</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4232981947847</PosxNode>
+              <PosyNode>-3,68173034907482</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>146</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>5734</Node>
+              <Distance>2572</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4235889058357</PosxNode>
+              <PosyNode>-3,68131951966234</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>146</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>5737</Node>
+              <Distance>2592</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4236980705528</PosxNode>
+              <PosyNode>-3,6811402619863</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>146</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>5738</Node>
+              <Distance>2663</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,424026638494</PosxNode>
+              <PosyNode>-3,68041977865542</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>146</IdLine>
+              <SecDetail>10</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>751</Node>
+              <Distance>2700</Distance>
+              <DistStopPrev>37</DistStopPrev>
+              <Name>ALCALA-AGUIRRE</Name>
+              <PosxNode>40,424074441153</PosxNode>
+              <PosyNode>-3,67995108821912</PosyNode>
+            </Routes>
+          </ListRoutes>
+        </ListRouteSection>
+        <ListRouteSection>
+          <Order>3</Order>
+          <ListRoutes>
+            <Routes>
+              <IdLine>026</IdLine>
+              <SecDetail>10</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>2215</Node>
+              <Distance>4531</Distance>
+              <DistStopPrev>12</DistStopPrev>
+              <Name>NARVAEZ-AV.FELIPE II</Name>
+              <PosxNode>40,4259002048851</PosxNode>
+              <PosyNode>-3,67432275160954</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>026</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>9151</Node>
+              <Distance>4543</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4260155894116</PosxNode>
+              <PosyNode>-3,67461979745206</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>026</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>9152</Node>
+              <Distance>4613</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4266466322996</PosxNode>
+              <PosyNode>-3,67454947604054</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>026</IdLine>
+              <SecDetail>10</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>2217</Node>
+              <Distance>4703</Distance>
+              <DistStopPrev>90</DistStopPrev>
+              <Name>CONDE DE PEÑALVER-HERMOSILLA</Name>
+              <PosxNode>40,4274505626091</PosxNode>
+              <PosyNode>-3,6741849807229</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>026</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>9153</Node>
+              <Distance>4739</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,427782296058</PosxNode>
+              <PosyNode>-3,67445943783306</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>026</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>9154</Node>
+              <Distance>4892</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4291613749146</PosxNode>
+              <PosyNode>-3,67433999762103</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>026</IdLine>
+              <SecDetail>10</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>2219</Node>
+              <Distance>4924</Distance>
+              <DistStopPrev>32</DistStopPrev>
+              <Name>CONDE DE PEÑALVER-AYALA</Name>
+              <PosxNode>40,4294332594547</PosxNode>
+              <PosyNode>-3,67406330970214</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>026</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>9156</Node>
+              <Distance>5047</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4305494687401</PosxNode>
+              <PosyNode>-3,67421946401638</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>026</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>9157</Node>
+              <Distance>5179</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4317393063242</PosxNode>
+              <PosyNode>-3,67410873570015</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>026</IdLine>
+              <SecDetail>10</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>2221</Node>
+              <Distance>5214</Distance>
+              <DistStopPrev>35</DistStopPrev>
+              <Name>CONDE DE PEÑALVER-J.ORTEGA Y GASSET</Name>
+              <PosxNode>40,4320381608233</PosxNode>
+              <PosyNode>-3,67384173734584</PosyNode>
+            </Routes>
+          </ListRoutes>
+        </ListRouteSection>
+      </ListsRouteSection>
+    </RouteData>
+    <RouteData>
+      <IdDescripcion>PTA.SOL-PQUE.SAN JUAN BAUTISTA * PZA.TIRSO MOLINA-DIEGO DE LEON</IdDescripcion>
+      <IdLinea>53 * 26</IdLinea>
+      <DescriptionRouteData>
+        <DescriptionDate>Fecha:3/5/2010</DescriptionDate>
+        <DescriptionInitTime>Hora de Salida:16:00</DescriptionInitTime>
+        <DescriptionEstimateTimeArrival>Hora estimada de llegada:16:36</DescriptionEstimateTimeArrival>
+        <Transfers>1</Transfers>
+        <LongJourney>36</LongJourney>
+      </DescriptionRouteData>
+      <ListSectionRoute>
+        <Section>
+          <Order>0</Order>
+          <WalkingLeg>
+            <SourceWalkingLeg>
+              <Name>Alcal� , 10</Name>
+              <CoordinatesXY>
+                <X>40,4197974646789</X>
+                <Y>-3,69770714138019</Y>
+              </CoordinatesXY>
+              <RouteDescription>Caminar 2 min</RouteDescription>
+            </SourceWalkingLeg>
+            <DestinationWalkingLeg>
+              <Name>ALCALA-CEDACEROS</Name>
+              <CoordinatesXY>
+                <X>40,4200938371083</X>
+                <Y>-3,69636642338843</Y>
+              </CoordinatesXY>
+            </DestinationWalkingLeg>
+          </WalkingLeg>
+        </Section>
+        <Section>
+          <Order>1</Order>
+          <BusLeg>
+            <SourceBusLeg>
+              <IdStop>2002</IdStop>
+              <NameStop>ALCALA-CEDACEROS</NameStop>
+              <NameStreet>Alcalá, 32</NameStreet>
+              <RouteDescription>18 min en autobús hasta</RouteDescription>
+              <CoordinatesXY>
+                <X>40,4200938371083</X>
+                <Y>-3,69636642338843</Y>
+              </CoordinatesXY>
+              <LinesOfBus>
+                <Line>
+                  <IdLine>53</IdLine>
+                  <HeaderA>PUERTA DEL SOL</HeaderA>
+                  <HeaderB>PARQUE DE SAN JUAN BAUTISTA</HeaderB>
+                </Line>
+              </LinesOfBus>
+            </SourceBusLeg>
+            <DestinationBusLeg>
+              <IdStop>674</IdStop>
+              <NameStop>GOYA-PRINCIPE VERGARA</NameStop>
+              <NameStreet>Goya, 34</NameStreet>
+              <CoordinatesXY>
+                <X>40,4267856538335</X>
+                <Y>-3,68003733473036</Y>
+              </CoordinatesXY>
+            </DestinationBusLeg>
+          </BusLeg>
+        </Section>
+        <Section>
+          <Order>2</Order>
+          <WalkingLeg>
+            <SourceWalkingLeg>
+              <Name>GOYA-PRINCIPE VERGARA</Name>
+              <CoordinatesXY>
+                <X>40,4267856538335</X>
+                <Y>-3,68003733473036</Y>
+              </CoordinatesXY>
+              <RouteDescription>Caminar 2 min</RouteDescription>
+            </SourceWalkingLeg>
+            <DestinationWalkingLeg>
+              <Name>NARVAEZ-AV.FELIPE II</Name>
+              <CoordinatesXY>
+                <X>40,4259002048851</X>
+                <Y>-3,67432275160954</Y>
+              </CoordinatesXY>
+            </DestinationWalkingLeg>
+          </WalkingLeg>
+        </Section>
+        <Section>
+          <Order>3</Order>
+          <BusLeg>
+            <SourceBusLeg>
+              <IdStop>2215</IdStop>
+              <NameStop>NARVAEZ-AV.FELIPE II</NameStop>
+              <NameStreet>Narvaez, 5 con Av. de Felipe II</NameStreet>
+              <RouteDescription>11 min en autobús hasta</RouteDescription>
+              <CoordinatesXY>
+                <X>40,4259002048851</X>
+                <Y>-3,67432275160954</Y>
+              </CoordinatesXY>
+              <LinesOfBus>
+                <Line>
+                  <IdLine>26</IdLine>
+                  <HeaderA>PLAZA DE TIRSO DE MOLINA</HeaderA>
+                  <HeaderB>DIEGO DE LEON</HeaderB>
+                </Line>
+              </LinesOfBus>
+            </SourceBusLeg>
+            <DestinationBusLeg>
+              <IdStop>2221</IdStop>
+              <NameStop>CONDE DE PEÑALVER-J.ORTEGA Y GASSET</NameStop>
+              <NameStreet>Conde de Peñalver, 50</NameStreet>
+              <CoordinatesXY>
+                <X>40,4320381608233</X>
+                <Y>-3,67384173734584</Y>
+              </CoordinatesXY>
+            </DestinationBusLeg>
+          </BusLeg>
+        </Section>
+        <Section>
+          <Order>4</Order>
+          <WalkingLeg>
+            <SourceWalkingLeg>
+              <Name>CONDE DE PEÑALVER-J.ORTEGA Y GASSET</Name>
+              <CoordinatesXY>
+                <X>40,4320381608233</X>
+                <Y>-3,67384173734584</Y>
+              </CoordinatesXY>
+              <RouteDescription>Caminar 3 min</RouteDescription>
+            </SourceWalkingLeg>
+            <DestinationWalkingLeg>
+              <Name>B�jar , 2</Name>
+              <CoordinatesXY>
+                <X>40,4374776330782</X>
+                <Y>-3,67263444878136</Y>
+              </CoordinatesXY>
+            </DestinationWalkingLeg>
+          </WalkingLeg>
+        </Section>
+      </ListSectionRoute>
+      <ListsRouteSection>
+        <ListRouteSection>
+          <Order>1</Order>
+          <ListRoutes>
+            <Routes>
+              <IdLine>053</IdLine>
+              <SecDetail>10</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>2002</Node>
+              <Distance>454</Distance>
+              <DistStopPrev>85</DistStopPrev>
+              <Name>ALCALA-CEDACEROS</Name>
+              <PosxNode>40,4200938371083</PosxNode>
+              <PosyNode>-3,69636642338843</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>053</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>1962</Node>
+              <Distance>528</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4205126265717</PosxNode>
+              <PosyNode>-3,69563990951492</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>053</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>753</Node>
+              <Distance>561</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4206228979598</PosxNode>
+              <PosyNode>-3,69528034374374</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>053</IdLine>
+              <SecDetail>10</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>90</Node>
+              <Distance>592</Distance>
+              <DistStopPrev>31</DistStopPrev>
+              <Name>ALCALA-MINISTERIO EDUCACION</Name>
+              <PosxNode>40,4204545995338</PosxNode>
+              <PosyNode>-3,69480239173841</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>053</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>517</Node>
+              <Distance>597</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4207334091125</PosxNode>
+              <PosyNode>-3,69488070123584</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>053</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>518</Node>
+              <Distance>615</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4207796627741</PosxNode>
+              <PosyNode>-3,69467960812442</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>053</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>519</Node>
+              <Distance>643</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4208536495036</PosxNode>
+              <PosyNode>-3,69436092317038</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>053</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>520</Node>
+              <Distance>671</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4209096325445</PosxNode>
+              <PosyNode>-3,69403969495023</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>053</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>521</Node>
+              <Distance>758</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,420972801261</PosxNode>
+              <PosyNode>-3,69251973115091</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>053</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>522</Node>
+              <Distance>804</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4209577767847</PosxNode>
+              <PosyNode>-3,69201977879269</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>053</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>523</Node>
+              <Distance>846</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4209577767847</PosxNode>
+              <PosyNode>-3,69201977879269</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>053</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>524</Node>
+              <Distance>877</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4209599280698</PosxNode>
+              <PosyNode>-3,69166027610995</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>053</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>1963</Node>
+              <Distance>898</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4210333778504</PosxNode>
+              <PosyNode>-3,69142998928739</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>053</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>1964</Node>
+              <Distance>932</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4213313910122</PosxNode>
+              <PosyNode>-3,69131044783143</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>053</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>1965</Node>
+              <Distance>942</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4214216027534</PosxNode>
+              <PosyNode>-3,69129015332675</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>053</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>1966</Node>
+              <Distance>1011</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4220172199799</PosxNode>
+              <PosyNode>-3,69111943233933</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>053</IdLine>
+              <SecDetail>10</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>72</Node>
+              <Distance>1031</Distance>
+              <DistStopPrev>20</DistStopPrev>
+              <Name>Pº RECOLETOS-PZA.DE CIBELES</Name>
+              <PosxNode>40,4221448464169</PosxNode>
+              <PosyNode>-3,69086847738928</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>053</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>1967</Node>
+              <Distance>1055</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4223966121033</PosxNode>
+              <PosyNode>-3,69095003238628</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>053</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>1968</Node>
+              <Distance>1103</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4228032125394</PosxNode>
+              <PosyNode>-3,69075026004223</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>053</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>1969</Node>
+              <Distance>1138</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4230924558713</PosxNode>
+              <PosyNode>-3,69059054343417</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>053</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>1970</Node>
+              <Distance>1272</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4242307064688</PosxNode>
+              <PosyNode>-3,69006935485671</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>053</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>1971</Node>
+              <Distance>1361</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4249894943131</PosxNode>
+              <PosyNode>-3,68972935170702</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>053</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>1972</Node>
+              <Distance>1401</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4253327308668</PosxNode>
+              <PosyNode>-3,6895796078605</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>053</IdLine>
+              <SecDetail>10</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>65</Node>
+              <Distance>1445</Distance>
+              <DistStopPrev>44</DistStopPrev>
+              <Name>Pº RECOLETOS-BIBLIOTECA NACIONAL</Name>
+              <PosxNode>40,4256680622167</PosxNode>
+              <PosyNode>-3,68924470205005</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>053</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>1973</Node>
+              <Distance>1531</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4264436983611</PosxNode>
+              <PosyNode>-3,68910054618519</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>053</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>1974</Node>
+              <Distance>1569</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4267688047018</PosxNode>
+              <PosyNode>-3,68896947295656</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>053</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>8109</Node>
+              <Distance>1628</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4272922801335</PosxNode>
+              <PosyNode>-3,6888097714523</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>053</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>8110</Node>
+              <Distance>1651</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4272700769222</PosxNode>
+              <PosyNode>-3,68799965443558</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>053</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>8111</Node>
+              <Distance>1697</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4272594332271</PosxNode>
+              <PosyNode>-3,6867593644627</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>053</IdLine>
+              <SecDetail>10</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>670</Node>
+              <Distance>1770</Distance>
+              <DistStopPrev>73</DistStopPrev>
+              <Name>GOYA-SERRANO</Name>
+              <PosxNode>40,4271761084279</PosxNode>
+              <PosyNode>-3,68713693685509</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>053</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>8112</Node>
+              <Distance>1803</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4272594332271</PosxNode>
+              <PosyNode>-3,6867593644627</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>053</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>8115</Node>
+              <Distance>1811</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4271954871048</PosxNode>
+              <PosyNode>-3,68539003585344</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>053</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>8116</Node>
+              <Distance>1919</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4271548869187</PosxNode>
+              <PosyNode>-3,68463985727716</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>053</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>8119</Node>
+              <Distance>1983</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4271394171511</PosxNode>
+              <PosyNode>-3,68420941001788</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>053</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>8122</Node>
+              <Distance>2020</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4270657847243</PosxNode>
+              <PosyNode>-3,6829496236999</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>053</IdLine>
+              <SecDetail>10</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>672</Node>
+              <Distance>2107</Distance>
+              <DistStopPrev>87</DistStopPrev>
+              <Name>GOYA-VELAZQUEZ</Name>
+              <PosxNode>40,4269292504116</PosxNode>
+              <PosyNode>-3,68318637521926</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>053</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>8125</Node>
+              <Distance>2127</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4270106907141</PosxNode>
+              <PosyNode>-3,68159925382587</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>053</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>8131</Node>
+              <Distance>2242</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4269460382991</PosxNode>
+              <PosyNode>-3,68033956313554</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>053</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>8132</Node>
+              <Distance>2349</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4268818429516</PosxNode>
+              <PosyNode>-3,67899971600481</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>053</IdLine>
+              <SecDetail>10</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>674</Node>
+              <Distance>2375</Distance>
+              <DistStopPrev>26</DistStopPrev>
+              <Name>GOYA-PRINCIPE VERGARA</Name>
+              <PosxNode>40,4267856538335</PosxNode>
+              <PosyNode>-3,68003733473036</PosyNode>
+            </Routes>
+          </ListRoutes>
+        </ListRouteSection>
+        <ListRouteSection>
+          <Order>3</Order>
+          <ListRoutes>
+            <Routes>
+              <IdLine>026</IdLine>
+              <SecDetail>10</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>2215</Node>
+              <Distance>4531</Distance>
+              <DistStopPrev>12</DistStopPrev>
+              <Name>NARVAEZ-AV.FELIPE II</Name>
+              <PosxNode>40,4259002048851</PosxNode>
+              <PosyNode>-3,67432275160954</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>026</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>9151</Node>
+              <Distance>4543</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4260155894116</PosxNode>
+              <PosyNode>-3,67461979745206</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>026</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>9152</Node>
+              <Distance>4613</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4266466322996</PosxNode>
+              <PosyNode>-3,67454947604054</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>026</IdLine>
+              <SecDetail>10</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>2217</Node>
+              <Distance>4703</Distance>
+              <DistStopPrev>90</DistStopPrev>
+              <Name>CONDE DE PEÑALVER-HERMOSILLA</Name>
+              <PosxNode>40,4274505626091</PosxNode>
+              <PosyNode>-3,6741849807229</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>026</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>9153</Node>
+              <Distance>4739</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,427782296058</PosxNode>
+              <PosyNode>-3,67445943783306</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>026</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>9154</Node>
+              <Distance>4892</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4291613749146</PosxNode>
+              <PosyNode>-3,67433999762103</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>026</IdLine>
+              <SecDetail>10</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>2219</Node>
+              <Distance>4924</Distance>
+              <DistStopPrev>32</DistStopPrev>
+              <Name>CONDE DE PEÑALVER-AYALA</Name>
+              <PosxNode>40,4294332594547</PosxNode>
+              <PosyNode>-3,67406330970214</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>026</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>9156</Node>
+              <Distance>5047</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4305494687401</PosxNode>
+              <PosyNode>-3,67421946401638</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>026</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>9157</Node>
+              <Distance>5179</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4317393063242</PosxNode>
+              <PosyNode>-3,67410873570015</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>026</IdLine>
+              <SecDetail>10</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>2221</Node>
+              <Distance>5214</Distance>
+              <DistStopPrev>35</DistStopPrev>
+              <Name>CONDE DE PEÑALVER-J.ORTEGA Y GASSET</Name>
+              <PosxNode>40,4320381608233</PosxNode>
+              <PosyNode>-3,67384173734584</PosyNode>
+            </Routes>
+          </ListRoutes>
+        </ListRouteSection>
+      </ListsRouteSection>
+    </RouteData>
+  </ListRouteData>
+</Resultado>

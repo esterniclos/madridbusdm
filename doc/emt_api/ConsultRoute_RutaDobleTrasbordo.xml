@@ -1,0 +1,3588 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Resultado xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="">
+  <CodError>300</CodError>
+  <Description>La recuperación de rutas ha sido correcta.</Description>
+  <ListRouteData>
+    <RouteData>
+      <IdDescripcion>ATOCHA-COLONIA SAN JOSE OBRERO * GTA.EMBAJADORES-PZA.CASTILLA * PZA.CASTILLA-SANCHINARRO ESTE</IdDescripcion>
+      <IdLinea>247 * 27 * 174</IdLinea>
+      <DescriptionRouteData>
+        <DescriptionDate>Fecha:3/5/2010</DescriptionDate>
+        <DescriptionInitTime>Hora de Salida:16:00</DescriptionInitTime>
+        <DescriptionEstimateTimeArrival>Hora estimada de llegada:17:49</DescriptionEstimateTimeArrival>
+        <Transfers>2</Transfers>
+        <LongJourney>109</LongJourney>
+      </DescriptionRouteData>
+      <ListSectionRoute>
+        <Section>
+          <Order>0</Order>
+          <WalkingLeg>
+            <SourceWalkingLeg>
+              <Name>Avenida de Rafaela Ybarra , 10</Name>
+              <CoordinatesXY>
+                <X>40,3842629936325</X>
+                <Y>-3,70999346526269</Y>
+              </CoordinatesXY>
+              <RouteDescription>Caminar 5 min</RouteDescription>
+            </SourceWalkingLeg>
+            <DestinationWalkingLeg>
+              <Name>MARCELO USERA-AV.RAFAELA YBARRA</Name>
+              <CoordinatesXY>
+                <X>40,3869594653458</X>
+                <Y>-3,71101144726443</Y>
+              </CoordinatesXY>
+            </DestinationWalkingLeg>
+          </WalkingLeg>
+        </Section>
+        <Section>
+          <Order>1</Order>
+          <BusLeg>
+            <SourceBusLeg>
+              <IdStop>2429</IdStop>
+              <NameStop>MARCELO USERA-AV.RAFAELA YBARRA</NameStop>
+              <NameStreet>Marcelo Usera, 143</NameStreet>
+              <RouteDescription>27 min en autobús hasta</RouteDescription>
+              <CoordinatesXY>
+                <X>40,3869594653458</X>
+                <Y>-3,71101144726443</Y>
+              </CoordinatesXY>
+              <LinesOfBus>
+                <Line>
+                  <IdLine>247</IdLine>
+                  <HeaderA>ATOCHA</HeaderA>
+                  <HeaderB>COLONIA SAN JOSE OBRERO</HeaderB>
+                </Line>
+                <Line>
+                  <IdLine>47</IdLine>
+                  <HeaderA>ATOCHA</HeaderA>
+                  <HeaderB>CARABANCHEL ALTO</HeaderB>
+                </Line>
+              </LinesOfBus>
+            </SourceBusLeg>
+            <DestinationBusLeg>
+              <IdStop>1183</IdStop>
+              <NameStop>Pº DELICIAS-RAMIREZ DE PRADO</NameStop>
+              <NameStreet>Pº de las Delicias frente al Nº 52</NameStreet>
+              <CoordinatesXY>
+                <X>40,4020982907822</X>
+                <Y>-3,69261027447562</Y>
+              </CoordinatesXY>
+            </DestinationBusLeg>
+          </BusLeg>
+        </Section>
+        <Section>
+          <Order>2</Order>
+          <WalkingLeg>
+            <SourceWalkingLeg>
+              <Name>Pº DELICIAS-RAMIREZ DE PRADO</Name>
+              <CoordinatesXY>
+                <X>40,4020982907822</X>
+                <Y>-3,69261027447562</Y>
+              </CoordinatesXY>
+              <RouteDescription>Caminar 2 min</RouteDescription>
+            </SourceWalkingLeg>
+            <DestinationWalkingLeg>
+              <Name>DELICIAS Nº 14</Name>
+              <CoordinatesXY>
+                <X>40,4059718805137</X>
+                <Y>-3,69266176456531</Y>
+              </CoordinatesXY>
+            </DestinationWalkingLeg>
+          </WalkingLeg>
+        </Section>
+        <Section>
+          <Order>3</Order>
+          <BusLeg>
+            <SourceBusLeg>
+              <IdStop>88</IdStop>
+              <NameStop>DELICIAS Nº 14</NameStop>
+              <NameStreet>Delicias, 14</NameStreet>
+              <RouteDescription>36 min en autobús hasta</RouteDescription>
+              <CoordinatesXY>
+                <X>40,4059718805137</X>
+                <Y>-3,69266176456531</Y>
+              </CoordinatesXY>
+              <LinesOfBus>
+                <Line>
+                  <IdLine>27</IdLine>
+                  <HeaderA>GLORIETA DE EMBAJADORES</HeaderA>
+                  <HeaderB>PLAZA DE CASTILLA</HeaderB>
+                </Line>
+              </LinesOfBus>
+            </SourceBusLeg>
+            <DestinationBusLeg>
+              <IdStop>29</IdStop>
+              <NameStop>Pº CASTELLANA-JUZGADOS</NameStop>
+              <NameStreet>Pº de la Castellana con Pza. Castilla (frente Juzgados)</NameStreet>
+              <CoordinatesXY>
+                <X>40,4669101515388</X>
+                <Y>-3,68792036669175</Y>
+              </CoordinatesXY>
+            </DestinationBusLeg>
+          </BusLeg>
+        </Section>
+        <Section>
+          <Order>4</Order>
+          <WalkingLeg>
+            <SourceWalkingLeg>
+              <Name>Pº CASTELLANA-JUZGADOS</Name>
+              <CoordinatesXY>
+                <X>40,4669101515388</X>
+                <Y>-3,68792036669175</Y>
+              </CoordinatesXY>
+              <RouteDescription>Caminar 2 min</RouteDescription>
+            </SourceWalkingLeg>
+            <DestinationWalkingLeg>
+              <Name>INTERCAMBIADOR PZA.DE CASTILLA</Name>
+              <CoordinatesXY>
+                <X>40,4695235062029</X>
+                <Y>-3,68779368263118</Y>
+              </CoordinatesXY>
+            </DestinationWalkingLeg>
+          </WalkingLeg>
+        </Section>
+        <Section>
+          <Order>5</Order>
+          <BusLeg>
+            <SourceBusLeg>
+              <IdStop>5611</IdStop>
+              <NameStop>INTERCAMBIADOR PZA.DE CASTILLA</NameStop>
+              <NameStreet>Intercambiador Pza. de Castilla superficie, dársena 42.</NameStreet>
+              <RouteDescription>36 min en autobús hasta</RouteDescription>
+              <CoordinatesXY>
+                <X>40,4695235062029</X>
+                <Y>-3,68779368263118</Y>
+              </CoordinatesXY>
+              <LinesOfBus>
+                <Line>
+                  <IdLine>174</IdLine>
+                  <HeaderA>PLAZA DE CASTILLA</HeaderA>
+                  <HeaderB>SANCHINARRO ESTE</HeaderB>
+                </Line>
+                <Line>
+                  <IdLine>173</IdLine>
+                  <HeaderA>PLAZA DE CASTILLA</HeaderA>
+                  <HeaderB>SANCHINARRO</HeaderB>
+                </Line>
+              </LinesOfBus>
+            </SourceBusLeg>
+            <DestinationBusLeg>
+              <IdStop>3253</IdStop>
+              <NameStop>Pº CASTELLANA-HOSPITAL LA PAZ</NameStop>
+              <NameStreet>Pº de la Castellana, 300</NameStreet>
+              <CoordinatesXY>
+                <X>40,4823660687977</X>
+                <Y>-3,68394867583715</Y>
+              </CoordinatesXY>
+            </DestinationBusLeg>
+          </BusLeg>
+        </Section>
+        <Section>
+          <Order>6</Order>
+          <WalkingLeg>
+            <SourceWalkingLeg>
+              <Name>Pº CASTELLANA-HOSPITAL LA PAZ</Name>
+              <CoordinatesXY>
+                <X>40,4823660687977</X>
+                <Y>-3,68394867583715</Y>
+              </CoordinatesXY>
+              <RouteDescription>Caminar 1 min</RouteDescription>
+            </SourceWalkingLeg>
+            <DestinationWalkingLeg>
+              <Name>Avenida de Manoteras , 10</Name>
+              <CoordinatesXY>
+                <X>40,4906901864709</X>
+                <Y>-3,67013290461764</Y>
+              </CoordinatesXY>
+            </DestinationWalkingLeg>
+          </WalkingLeg>
+        </Section>
+      </ListSectionRoute>
+      <ListsRouteSection>
+        <ListRouteSection>
+          <Order>1</Order>
+          <ListRoutes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>20</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>2429</Node>
+              <Distance>2374</Distance>
+              <DistStopPrev>163</DistStopPrev>
+              <Name>MARCELO USERA-AV.RAFAELA YBARRA</Name>
+              <PosxNode>40,3869594653458</PosxNode>
+              <PosyNode>-3,71101144726443</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>6536</Node>
+              <Distance>2412</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3870613034436</PosxNode>
+              <PosyNode>-3,71056598888935</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>6660</Node>
+              <Distance>2463</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3871669075286</PosxNode>
+              <PosyNode>-3,70950673723464</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>6882</Node>
+              <Distance>2503</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3872237984569</PosxNode>
+              <PosyNode>-3,7090443093142</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>6826</Node>
+              <Distance>2542</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3872523912677</PosxNode>
+              <PosyNode>-3,70878894389444</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>6835</Node>
+              <Distance>2564</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3872905261702</PosxNode>
+              <PosyNode>-3,70844649280959</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>6816</Node>
+              <Distance>2594</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3873951090086</PosxNode>
+              <PosyNode>-3,70755099100204</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>7189</Node>
+              <Distance>2671</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3874617930118</PosxNode>
+              <PosyNode>-3,70695906194617</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>20</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>2427</Node>
+              <Distance>2697</Distance>
+              <DistStopPrev>26</DistStopPrev>
+              <Name>MARCELO USERA-GABRIEL USERA</Name>
+              <PosxNode>40,3873520051471</PosxNode>
+              <PosyNode>-3,70723360876458</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>7132</Node>
+              <Distance>2721</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3875471746406</PosxNode>
+              <PosyNode>-3,70625539936277</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>11998</Node>
+              <Distance>2782</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3875471746406</PosxNode>
+              <PosyNode>-3,70625539936277</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>11939</Node>
+              <Distance>2832</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3876714819707</PosxNode>
+              <PosyNode>-3,70507733125879</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>11925</Node>
+              <Distance>2883</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3877381389939</PosxNode>
+              <PosyNode>-3,70448775339389</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>12087</Node>
+              <Distance>2933</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3878047499908</PosxNode>
+              <PosyNode>-3,70390524302077</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>20</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>2425</Node>
+              <Distance>2959</Distance>
+              <DistStopPrev>26</DistStopPrev>
+              <Name>MARCELO USERA-FERROVIARIOS</Name>
+              <PosxNode>40,3876859966855</PosxNode>
+              <PosyNode>-3,70417381189318</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>12275</Node>
+              <Distance>2983</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3878714870416</PosxNode>
+              <PosyNode>-3,70330152534443</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>12263</Node>
+              <Distance>3035</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3879380706022</PosxNode>
+              <PosyNode>-3,70272254692565</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>12215</Node>
+              <Distance>3085</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3880049874804</PosxNode>
+              <PosyNode>-3,70208819568232</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>12368</Node>
+              <Distance>3139</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3880625493163</PosxNode>
+              <PosyNode>-3,70151029949113</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>12573</Node>
+              <Distance>3189</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3881004484094</PosxNode>
+              <PosyNode>-3,70120318355238</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>20</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>2422</Node>
+              <Distance>3200</Distance>
+              <DistStopPrev>11</DistStopPrev>
+              <Name>MARCELO USERA-OLVIDO</Name>
+              <PosxNode>40,3880003186659</PosxNode>
+              <PosyNode>-3,70137298326411</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>12570</Node>
+              <Distance>3215</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3881004484094</PosxNode>
+              <PosyNode>-3,70120318355238</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>12540</Node>
+              <Distance>3270</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3887191531242</PosxNode>
+              <PosyNode>-3,70019869887635</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>12539</Node>
+              <Distance>3326</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3890464052238</PosxNode>
+              <PosyNode>-3,69971548631178</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>12688</Node>
+              <Distance>3381</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3893100185693</PosxNode>
+              <PosyNode>-3,69932704649447</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>20</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>1936</Node>
+              <Distance>3404</Distance>
+              <DistStopPrev>23</DistStopPrev>
+              <Name>MARCELO USERA-ALMENDRALES</Name>
+              <PosxNode>40,3891290785351</PosxNode>
+              <PosyNode>-3,69945242199669</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>12695</Node>
+              <Distance>3425</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3893100185693</PosxNode>
+              <PosyNode>-3,69932704649447</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>12690</Node>
+              <Distance>3437</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3893827279646</PosxNode>
+              <PosyNode>-3,69922175893043</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>12879</Node>
+              <Distance>3490</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3896919020235</PosxNode>
+              <PosyNode>-3,69874777587179</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>32967</Node>
+              <Distance>3543</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3901100941152</PosxNode>
+              <PosyNode>-3,69812292266749</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>12827</Node>
+              <Distance>3560</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3901100941152</PosxNode>
+              <PosyNode>-3,69812292266749</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>12846</Node>
+              <Distance>3576</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3902010114905</PosxNode>
+              <PosyNode>-3,69798600827919</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>12996</Node>
+              <Distance>3662</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3907191316186</PosxNode>
+              <PosyNode>-3,69722314393512</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>12995</Node>
+              <Distance>3700</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3909464185694</PosxNode>
+              <PosyNode>-3,69688144024136</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>13034</Node>
+              <Distance>3740</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3927828013374</PosxNode>
+              <PosyNode>-3,69413023977341</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>33247</Node>
+              <Distance>4011</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3929917652673</PosxNode>
+              <PosyNode>-3,69383781508336</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>33485</Node>
+              <Distance>4044</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3929917652673</PosxNode>
+              <PosyNode>-3,69383781508336</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>13329</Node>
+              <Distance>4081</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3933076009872</PosxNode>
+              <PosyNode>-3,69375150703699</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>20</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>3858</Node>
+              <Distance>4180</Distance>
+              <DistStopPrev>99</DistStopPrev>
+              <Name>Pº DELICIAS-PZA.LEGAZPI</Name>
+              <PosxNode>40,3941831596155</PosxNode>
+              <PosyNode>-3,69347180889624</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>13319</Node>
+              <Distance>4206</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3944344018831</PosxNode>
+              <PosyNode>-3,69364052767664</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>13323</Node>
+              <Distance>4267</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3949843530402</PosxNode>
+              <PosyNode>-3,69357429385891</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>33218</Node>
+              <Distance>4350</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3957326471074</PosxNode>
+              <PosyNode>-3,69348417080513</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>33219</Node>
+              <Distance>4390</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3960932707006</PosxNode>
+              <PosyNode>-3,69344073733726</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>13311</Node>
+              <Distance>4434</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3964808844983</PosxNode>
+              <PosyNode>-3,69340347203246</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>13309</Node>
+              <Distance>4497</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3970488241415</PosxNode>
+              <PosyNode>-3,69334213245561</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>20</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>1182</Node>
+              <Distance>4514</Distance>
+              <DistStopPrev>17</DistStopPrev>
+              <Name>Pº DELICIAS-ALEJANDRO FERRANT</Name>
+              <PosxNode>40,397184905676</PosxNode>
+              <PosyNode>-3,69318445051853</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>13313</Node>
+              <Distance>4614</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3993206878639</PosxNode>
+              <PosyNode>-3,69307908971934</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>13308</Node>
+              <Distance>4751</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3993206878639</PosxNode>
+              <PosyNode>-3,69307908971934</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>20</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>5036</Node>
+              <Distance>4785</Distance>
+              <DistStopPrev>34</DistStopPrev>
+              <Name>Pº DELICIAS-TOMAS BRETON</Name>
+              <PosxNode>40,3996102457267</PosxNode>
+              <PosyNode>-3,69286759092695</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>13306</Node>
+              <Distance>4866</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4010516085605</PosxNode>
+              <PosyNode>-3,69288236844327</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>13305</Node>
+              <Distance>4943</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4018088887717</PosxNode>
+              <PosyNode>-3,6927958580265</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>13218</Node>
+              <Distance>5028</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4018088887717</PosxNode>
+              <PosyNode>-3,6927958580265</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>20</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>1183</Node>
+              <Distance>5062</Distance>
+              <DistStopPrev>34</DistStopPrev>
+              <Name>Pº DELICIAS-RAMIREZ DE PRADO</Name>
+              <PosxNode>40,402107362824</PosxNode>
+              <PosyNode>-3,69259976149118</PosyNode>
+            </Routes>
+          </ListRoutes>
+        </ListRouteSection>
+        <ListRouteSection>
+          <Order>3</Order>
+          <ListRoutes>
+            <Routes>
+              <IdLine>174</IdLine>
+              <SecDetail>10</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>5611</Node>
+              <Distance>0</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name>INTERCAMBIADOR PZA.DE CASTILLA</Name>
+              <PosxNode>40,4695235553361</PosxNode>
+              <PosyNode>-3,68778542580241</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>174</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>17227</Node>
+              <Distance>15</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4696676970607</PosxNode>
+              <PosyNode>-3,68778571674241</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>174</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>17373</Node>
+              <Distance>39</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4698752767234</PosxNode>
+              <PosyNode>-3,68772295516414</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>174</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>17374</Node>
+              <Distance>70</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4701549868555</PosxNode>
+              <PosyNode>-3,6876503123095</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>174</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>17375</Node>
+              <Distance>94</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4703625383659</PosxNode>
+              <PosyNode>-3,68759226812746</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>174</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>17376</Node>
+              <Distance>112</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4703204283759</PosxNode>
+              <PosyNode>-3,68709875222197</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>174</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>17377</Node>
+              <Distance>137</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4703204283759</PosxNode>
+              <PosyNode>-3,68709875222197</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>174</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>17378</Node>
+              <Distance>190</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4707897215571</PosxNode>
+              <PosyNode>-3,68695961926012</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>174</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>17380</Node>
+              <Distance>197</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4708529066798</PosxNode>
+              <PosyNode>-3,6869390295865</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>174</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>17381</Node>
+              <Distance>284</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4716199189977</PosxNode>
+              <PosyNode>-3,68672860942043</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>174</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>17382</Node>
+              <Distance>296</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4717191938114</PosxNode>
+              <PosyNode>-3,68669894967533</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>174</IdLine>
+              <SecDetail>10</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>1487</Node>
+              <Distance>436</Distance>
+              <DistStopPrev>140</DistStopPrev>
+              <Name>Pº CASTELLANA-JOSE VASCONCELOS</Name>
+              <PosxNode>40,4729382095665</PosxNode>
+              <PosyNode>-3,68622652014129</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>174</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>17383</Node>
+              <Distance>448</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4730637880891</PosxNode>
+              <PosyNode>-3,68631863397295</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>174</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>17385</Node>
+              <Distance>543</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4739116367481</PosxNode>
+              <PosyNode>-3,6861491326619</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>174</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>17386</Node>
+              <Distance>609</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,474488980578</PosxNode>
+              <PosyNode>-3,6860193436587</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>174</IdLine>
+              <SecDetail>10</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>1488</Node>
+              <Distance>682</Distance>
+              <DistStopPrev>73</DistStopPrev>
+              <Name>Pº CASTELLANA-MQUES.TORRELAGUNA</Name>
+              <PosxNode>40,4750955609976</PosxNode>
+              <PosyNode>-3,68551705970065</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>174</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>17387</Node>
+              <Distance>714</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4754271577822</PosxNode>
+              <PosyNode>-3,68580946412419</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>174</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>17388</Node>
+              <Distance>756</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4757970626735</PosxNode>
+              <PosyNode>-3,68571884965334</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>174</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>17389</Node>
+              <Distance>763</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4758602405441</PosxNode>
+              <PosyNode>-3,68569943700809</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>174</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>17390</Node>
+              <Distance>775</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4759595220471</PosxNode>
+              <PosyNode>-3,68566859430501</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>174</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>17391</Node>
+              <Distance>796</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4761489436546</PosxNode>
+              <PosyNode>-3,68562923060183</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>174</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>17392</Node>
+              <Distance>838</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4765189673225</PosxNode>
+              <PosyNode>-3,685518559836</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>174</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>17398</Node>
+              <Distance>870</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4767987178588</PosxNode>
+              <PosyNode>-3,68543882299141</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>174</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>18271</Node>
+              <Distance>878</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4768709110841</PosxNode>
+              <PosyNode>-3,68541832174439</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>174</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>18272</Node>
+              <Distance>886</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4769430973094</PosxNode>
+              <PosyNode>-3,68539900013188</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>174</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>18273</Node>
+              <Distance>909</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4771417090895</PosxNode>
+              <PosyNode>-3,68532905503682</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>174</IdLine>
+              <SecDetail>10</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>2653</Node>
+              <Distance>913</Distance>
+              <DistStopPrev>4</DistStopPrev>
+              <Name>Pº CASTELLANA-DANIEL VAZQUEZ DIAZ</Name>
+              <PosxNode>40,477160579213</PosxNode>
+              <PosyNode>-3,68518531713058</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>174</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>18274</Node>
+              <Distance>1014</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4780710581599</PosxNode>
+              <PosyNode>-3,68508839442831</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>174</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>18278</Node>
+              <Distance>1108</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4789179606103</PosxNode>
+              <PosyNode>-3,68507812703387</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>174</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>18279</Node>
+              <Distance>1157</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4793510355087</PosxNode>
+              <PosyNode>-3,68496926954313</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>174</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>18280</Node>
+              <Distance>1266</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4803075276221</PosxNode>
+              <PosyNode>-3,68470881557454</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>174</IdLine>
+              <SecDetail>10</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>3252</Node>
+              <Distance>1300</Distance>
+              <DistStopPrev>34</DistStopPrev>
+              <Name>Pº CASTELLANA Nº 292</Name>
+              <PosxNode>40,4805881998363</PosxNode>
+              <PosyNode>-3,68447334523386</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>174</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>18281</Node>
+              <Distance>1337</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4809392203119</PosxNode>
+              <PosyNode>-3,6845288225967</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>174</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>18283</Node>
+              <Distance>1376</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4812821546357</PosxNode>
+              <PosyNode>-3,68442848157775</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>174</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>18284</Node>
+              <Distance>1433</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4817784762576</PosxNode>
+              <PosyNode>-3,68428840308633</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>174</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>18285</Node>
+              <Distance>1476</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4821574439683</PosxNode>
+              <PosyNode>-3,68418842551223</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>174</IdLine>
+              <SecDetail>10</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>3253</Node>
+              <Distance>1503</Distance>
+              <DistStopPrev>27</DistStopPrev>
+              <Name>Pº CASTELLANA-HOSPITAL LA PAZ</Name>
+              <PosxNode>40,4823750841857</PosxNode>
+              <PosyNode>-3,68394758749836</PosyNode>
+            </Routes>
+          </ListRoutes>
+        </ListRouteSection>
+        <ListRouteSection>
+          <Order>5</Order>
+        </ListRouteSection>
+      </ListsRouteSection>
+    </RouteData>
+    <RouteData>
+      <IdDescripcion>ATOCHA-CARABANCHEL ALTO * GTA.EMBAJADORES-PZA.CASTILLA * PZA.CASTILLA-SANCHINARRO ESTE</IdDescripcion>
+      <IdLinea>47 * 27 * 174</IdLinea>
+      <DescriptionRouteData>
+        <DescriptionDate>Fecha:3/5/2010</DescriptionDate>
+        <DescriptionInitTime>Hora de Salida:16:00</DescriptionInitTime>
+        <DescriptionEstimateTimeArrival>Hora estimada de llegada:17:42</DescriptionEstimateTimeArrival>
+        <Transfers>2</Transfers>
+        <LongJourney>102</LongJourney>
+      </DescriptionRouteData>
+      <ListSectionRoute>
+        <Section>
+          <Order>0</Order>
+          <WalkingLeg>
+            <SourceWalkingLeg>
+              <Name>Avenida de Rafaela Ybarra , 10</Name>
+              <CoordinatesXY>
+                <X>40,3842629936325</X>
+                <Y>-3,70999346526269</Y>
+              </CoordinatesXY>
+              <RouteDescription>Caminar 5 min</RouteDescription>
+            </SourceWalkingLeg>
+            <DestinationWalkingLeg>
+              <Name>MARCELO USERA-AV.RAFAELA YBARRA</Name>
+              <CoordinatesXY>
+                <X>40,3869594653458</X>
+                <Y>-3,71101144726443</Y>
+              </CoordinatesXY>
+            </DestinationWalkingLeg>
+          </WalkingLeg>
+        </Section>
+        <Section>
+          <Order>1</Order>
+          <BusLeg>
+            <SourceBusLeg>
+              <IdStop>2429</IdStop>
+              <NameStop>MARCELO USERA-AV.RAFAELA YBARRA</NameStop>
+              <NameStreet>Marcelo Usera, 143</NameStreet>
+              <RouteDescription>20 min en autobús hasta</RouteDescription>
+              <CoordinatesXY>
+                <X>40,3869594653458</X>
+                <Y>-3,71101144726443</Y>
+              </CoordinatesXY>
+              <LinesOfBus>
+                <Line>
+                  <IdLine>47</IdLine>
+                  <HeaderA>ATOCHA</HeaderA>
+                  <HeaderB>CARABANCHEL ALTO</HeaderB>
+                </Line>
+                <Line>
+                  <IdLine>247</IdLine>
+                  <HeaderA>ATOCHA</HeaderA>
+                  <HeaderB>COLONIA SAN JOSE OBRERO</HeaderB>
+                </Line>
+              </LinesOfBus>
+            </SourceBusLeg>
+            <DestinationBusLeg>
+              <IdStop>1183</IdStop>
+              <NameStop>Pº DELICIAS-RAMIREZ DE PRADO</NameStop>
+              <NameStreet>Pº de las Delicias frente al Nº 52</NameStreet>
+              <CoordinatesXY>
+                <X>40,4020982907822</X>
+                <Y>-3,69261027447562</Y>
+              </CoordinatesXY>
+            </DestinationBusLeg>
+          </BusLeg>
+        </Section>
+        <Section>
+          <Order>2</Order>
+          <WalkingLeg>
+            <SourceWalkingLeg>
+              <Name>Pº DELICIAS-RAMIREZ DE PRADO</Name>
+              <CoordinatesXY>
+                <X>40,4020982907822</X>
+                <Y>-3,69261027447562</Y>
+              </CoordinatesXY>
+              <RouteDescription>Caminar 2 min</RouteDescription>
+            </SourceWalkingLeg>
+            <DestinationWalkingLeg>
+              <Name>DELICIAS Nº 14</Name>
+              <CoordinatesXY>
+                <X>40,4059718805137</X>
+                <Y>-3,69266176456531</Y>
+              </CoordinatesXY>
+            </DestinationWalkingLeg>
+          </WalkingLeg>
+        </Section>
+        <Section>
+          <Order>3</Order>
+          <BusLeg>
+            <SourceBusLeg>
+              <IdStop>88</IdStop>
+              <NameStop>DELICIAS Nº 14</NameStop>
+              <NameStreet>Delicias, 14</NameStreet>
+              <RouteDescription>36 min en autobús hasta</RouteDescription>
+              <CoordinatesXY>
+                <X>40,4059718805137</X>
+                <Y>-3,69266176456531</Y>
+              </CoordinatesXY>
+              <LinesOfBus>
+                <Line>
+                  <IdLine>27</IdLine>
+                  <HeaderA>GLORIETA DE EMBAJADORES</HeaderA>
+                  <HeaderB>PLAZA DE CASTILLA</HeaderB>
+                </Line>
+              </LinesOfBus>
+            </SourceBusLeg>
+            <DestinationBusLeg>
+              <IdStop>29</IdStop>
+              <NameStop>Pº CASTELLANA-JUZGADOS</NameStop>
+              <NameStreet>Pº de la Castellana con Pza. Castilla (frente Juzgados)</NameStreet>
+              <CoordinatesXY>
+                <X>40,4669101515388</X>
+                <Y>-3,68792036669175</Y>
+              </CoordinatesXY>
+            </DestinationBusLeg>
+          </BusLeg>
+        </Section>
+        <Section>
+          <Order>4</Order>
+          <WalkingLeg>
+            <SourceWalkingLeg>
+              <Name>Pº CASTELLANA-JUZGADOS</Name>
+              <CoordinatesXY>
+                <X>40,4669101515388</X>
+                <Y>-3,68792036669175</Y>
+              </CoordinatesXY>
+              <RouteDescription>Caminar 2 min</RouteDescription>
+            </SourceWalkingLeg>
+            <DestinationWalkingLeg>
+              <Name>INTERCAMBIADOR PZA.DE CASTILLA</Name>
+              <CoordinatesXY>
+                <X>40,4695235062029</X>
+                <Y>-3,68779368263118</Y>
+              </CoordinatesXY>
+            </DestinationWalkingLeg>
+          </WalkingLeg>
+        </Section>
+        <Section>
+          <Order>5</Order>
+          <BusLeg>
+            <SourceBusLeg>
+              <IdStop>5611</IdStop>
+              <NameStop>INTERCAMBIADOR PZA.DE CASTILLA</NameStop>
+              <NameStreet>Intercambiador Pza. de Castilla superficie, dársena 42.</NameStreet>
+              <RouteDescription>36 min en autobús hasta</RouteDescription>
+              <CoordinatesXY>
+                <X>40,4695235062029</X>
+                <Y>-3,68779368263118</Y>
+              </CoordinatesXY>
+              <LinesOfBus>
+                <Line>
+                  <IdLine>174</IdLine>
+                  <HeaderA>PLAZA DE CASTILLA</HeaderA>
+                  <HeaderB>SANCHINARRO ESTE</HeaderB>
+                </Line>
+                <Line>
+                  <IdLine>173</IdLine>
+                  <HeaderA>PLAZA DE CASTILLA</HeaderA>
+                  <HeaderB>SANCHINARRO</HeaderB>
+                </Line>
+              </LinesOfBus>
+            </SourceBusLeg>
+            <DestinationBusLeg>
+              <IdStop>3253</IdStop>
+              <NameStop>Pº CASTELLANA-HOSPITAL LA PAZ</NameStop>
+              <NameStreet>Pº de la Castellana, 300</NameStreet>
+              <CoordinatesXY>
+                <X>40,4823660687977</X>
+                <Y>-3,68394867583715</Y>
+              </CoordinatesXY>
+            </DestinationBusLeg>
+          </BusLeg>
+        </Section>
+        <Section>
+          <Order>6</Order>
+          <WalkingLeg>
+            <SourceWalkingLeg>
+              <Name>Pº CASTELLANA-HOSPITAL LA PAZ</Name>
+              <CoordinatesXY>
+                <X>40,4823660687977</X>
+                <Y>-3,68394867583715</Y>
+              </CoordinatesXY>
+              <RouteDescription>Caminar 1 min</RouteDescription>
+            </SourceWalkingLeg>
+            <DestinationWalkingLeg>
+              <Name>Avenida de Manoteras , 10</Name>
+              <CoordinatesXY>
+                <X>40,4906901864709</X>
+                <Y>-3,67013290461764</Y>
+              </CoordinatesXY>
+            </DestinationWalkingLeg>
+          </WalkingLeg>
+        </Section>
+      </ListSectionRoute>
+      <ListsRouteSection>
+        <ListRouteSection>
+          <Order>1</Order>
+          <ListRoutes>
+            <Routes>
+              <IdLine>047</IdLine>
+              <SecDetail>20</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>2429</Node>
+              <Distance>6327</Distance>
+              <DistStopPrev>138</DistStopPrev>
+              <Name>MARCELO USERA-AV.RAFAELA YBARRA</Name>
+              <PosxNode>40,3869594653458</PosxNode>
+              <PosyNode>-3,71101144726443</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>047</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>14497</Node>
+              <Distance>6361</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3870428230951</PosxNode>
+              <PosyNode>-3,71064119801709</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>047</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>14496</Node>
+              <Distance>6412</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3871005577681</PosxNode>
+              <PosyNode>-3,71004211210035</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>047</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>14493</Node>
+              <Distance>6451</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3871484278659</PosxNode>
+              <PosyNode>-3,70958194677899</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>047</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>14491</Node>
+              <Distance>6491</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,387205311869</PosxNode>
+              <PosyNode>-3,70912069715675</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>047</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>14489</Node>
+              <Distance>6512</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3872248602301</PosxNode>
+              <PosyNode>-3,70887112791813</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>047</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>14488</Node>
+              <Distance>6542</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3872719894454</PosxNode>
+              <PosyNode>-3,70853112763619</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>047</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>14487</Node>
+              <Distance>6619</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3873675932647</PosxNode>
+              <PosyNode>-3,7076308195001</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>047</IdLine>
+              <SecDetail>20</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>2427</Node>
+              <Distance>6650</Distance>
+              <DistStopPrev>31</DistStopPrev>
+              <Name>MARCELO USERA-GABRIEL USERA</Name>
+              <PosxNode>40,3873520051471</PosxNode>
+              <PosyNode>-3,70723360876458</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>047</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>14486</Node>
+              <Distance>6670</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3874433366085</PosxNode>
+              <PosyNode>-3,70703073821066</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>047</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>14485</Node>
+              <Distance>6730</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3875196813747</PosxNode>
+              <PosyNode>-3,70633169424808</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>047</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>14484</Node>
+              <Distance>6746</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3875387992828</PosxNode>
+              <PosyNode>-3,70615163150221</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>047</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>14483</Node>
+              <Distance>6780</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3875862872514</PosxNode>
+              <PosyNode>-3,70575154392893</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>047</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>14481</Node>
+              <Distance>6832</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3876620208738</PosxNode>
+              <PosyNode>-3,70515145845545</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>047</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>14480</Node>
+              <Distance>6882</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,387719676937</PosxNode>
+              <PosyNode>-3,70456060876153</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>047</IdLine>
+              <SecDetail>20</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>2425</Node>
+              <Distance>6913</Distance>
+              <DistStopPrev>31</DistStopPrev>
+              <Name>MARCELO USERA-FERROVIARIOS</Name>
+              <PosxNode>40,3876859966855</PosxNode>
+              <PosyNode>-3,70417381189318</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>047</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>14479</Node>
+              <Distance>6932</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3877862667822</PosxNode>
+              <PosyNode>-3,70398163297167</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>047</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>14478</Node>
+              <Distance>6984</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,387853047227</PosxNode>
+              <PosyNode>-3,70337084683863</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>047</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>14477</Node>
+              <Distance>7034</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3879196382932</PosxNode>
+              <PosyNode>-3,70279069053236</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>047</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>14476</Node>
+              <Distance>7088</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3879775184091</PosxNode>
+              <PosyNode>-3,70216095845707</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>047</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>14475</Node>
+              <Distance>7138</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3880531119427</PosxNode>
+              <PosyNode>-3,70158089328474</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>047</IdLine>
+              <SecDetail>20</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>2422</Node>
+              <Distance>7153</Distance>
+              <DistStopPrev>15</DistStopPrev>
+              <Name>MARCELO USERA-OLVIDO</Name>
+              <PosxNode>40,3880003186659</PosxNode>
+              <PosyNode>-3,70137298326411</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>047</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>14474</Node>
+              <Distance>7164</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3880820169915</PosxNode>
+              <PosyNode>-3,70127132774923</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>047</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>2771</Node>
+              <Distance>7219</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3883553866142</PosxNode>
+              <PosyNode>-3,70076046779198</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>047</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>2769</Node>
+              <Distance>7275</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3887006937541</PosxNode>
+              <PosyNode>-3,7002715565074</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>047</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>2768</Node>
+              <Distance>7329</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3890279318955</PosxNode>
+              <PosyNode>-3,69979070070749</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>047</IdLine>
+              <SecDetail>20</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>1936</Node>
+              <Distance>7357</Distance>
+              <DistStopPrev>28</DistStopPrev>
+              <Name>MARCELO USERA-ALMENDRALES</Name>
+              <PosxNode>40,3891290785351</PosxNode>
+              <PosyNode>-3,69945242199669</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>047</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>2765</Node>
+              <Distance>7381</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3893369586344</PosxNode>
+              <PosyNode>-3,69934146377215</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>047</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>2925</Node>
+              <Distance>7438</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3896734435586</PosxNode>
+              <PosyNode>-3,69882063495664</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>047</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>2926</Node>
+              <Distance>7456</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3897017363036</PosxNode>
+              <PosyNode>-3,69861120352135</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>047</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>2927</Node>
+              <Distance>7489</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3896863164888</PosxNode>
+              <PosyNode>-3,69818099248915</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>047</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>2928</Node>
+              <Distance>7493</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3896863164888</PosxNode>
+              <PosyNode>-3,69818099248915</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>047</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>2929</Node>
+              <Distance>7499</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3896867361652</PosxNode>
+              <PosyNode>-3,69811148161708</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>047</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>2930</Node>
+              <Distance>7524</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3898322166653</PosxNode>
+              <PosyNode>-3,69789029907728</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>047</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>2932</Node>
+              <Distance>7529</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3898683716415</PosxNode>
+              <PosyNode>-3,69787064244029</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>047</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>2933</Node>
+              <Distance>7532</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3898953972149</PosxNode>
+              <PosyNode>-3,6978709214135</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>047</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>2934</Node>
+              <Distance>7544</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3900033217434</PosxNode>
+              <PosyNode>-3,69790149120913</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>047</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>2935</Node>
+              <Distance>7553</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3900753970476</PosxNode>
+              <PosyNode>-3,69790105701774</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>047</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>2755</Node>
+              <Distance>7605</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3904826787797</PosxNode>
+              <PosyNode>-3,697590671992</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>047</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>2754</Node>
+              <Distance>7635</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3906465305976</PosxNode>
+              <PosyNode>-3,69731076322593</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>047</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>2753</Node>
+              <Distance>7648</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3907282751151</PosxNode>
+              <PosyNode>-3,69720085163621</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>047</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>2752</Node>
+              <Distance>7667</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,390846359027</PosxNode>
+              <PosyNode>-3,69704064999503</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>047</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>2751</Node>
+              <Distance>7691</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3909917665018</PosxNode>
+              <PosyNode>-3,69683124309762</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>047</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>2750</Node>
+              <Distance>7728</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3912100366847</PosxNode>
+              <PosyNode>-3,69649062207063</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>047</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>2749</Node>
+              <Distance>7741</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3912827719055</PosxNode>
+              <PosyNode>-3,69638061577445</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>047</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>2937</Node>
+              <Distance>7962</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3926008127262</PosxNode>
+              <PosyNode>-3,69443118769029</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>047</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>7401</Node>
+              <Distance>7993</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3927916259704</PosxNode>
+              <PosyNode>-3,69416096561831</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>047</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>4735</Node>
+              <Distance>8064</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3933432816344</PosxNode>
+              <PosyNode>-3,69381078761072</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>047</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>4736</Node>
+              <Distance>8090</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3935685089402</PosxNode>
+              <PosyNode>-3,69381074272055</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>047</IdLine>
+              <SecDetail>20</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>3858</Node>
+              <Distance>8159</Distance>
+              <DistStopPrev>69</DistStopPrev>
+              <Name>Pº DELICIAS-PZA.LEGAZPI</Name>
+              <PosxNode>40,3941831596155</PosxNode>
+              <PosyNode>-3,69347180889624</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>047</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>4737</Node>
+              <Distance>8184</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3944069522092</PosxNode>
+              <PosyNode>-3,6937109443758</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>047</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>4741</Node>
+              <Distance>8245</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3949568680639</PosxNode>
+              <PosyNode>-3,69365060237205</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>047</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>4742</Node>
+              <Distance>8329</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3957052823291</PosxNode>
+              <PosyNode>-3,69354044983711</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>047</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>4743</Node>
+              <Distance>8365</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3960386188967</PosxNode>
+              <PosyNode>-3,69354033510305</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>047</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>4744</Node>
+              <Distance>8409</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3964263033928</PosxNode>
+              <PosyNode>-3,69349128770555</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>047</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>4749</Node>
+              <Distance>8476</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3970303972918</PosxNode>
+              <PosyNode>-3,6934102878485</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>047</IdLine>
+              <SecDetail>20</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>1182</Node>
+              <Distance>8494</Distance>
+              <DistStopPrev>18</DistStopPrev>
+              <Name>Pº DELICIAS-ALEJANDRO FERRANT</Name>
+              <PosxNode>40,397184905676</PosxNode>
+              <PosyNode>-3,69318445051853</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>047</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>4750</Node>
+              <Distance>8592</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3980671614867</PosxNode>
+              <PosyNode>-3,69329012539372</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>047</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>4751</Node>
+              <Distance>8644</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3985359295088</PosxNode>
+              <PosyNode>-3,69324072856801</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>047</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>4752</Node>
+              <Distance>8729</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,399302239966</PosxNode>
+              <PosyNode>-3,69315078242614</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>047</IdLine>
+              <SecDetail>20</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>5036</Node>
+              <Distance>8764</Distance>
+              <DistStopPrev>35</DistStopPrev>
+              <Name>Pº DELICIAS-TOMAS BRETON</Name>
+              <PosxNode>40,3996102457267</PosxNode>
+              <PosyNode>-3,69286759092695</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>047</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>4756</Node>
+              <Distance>8842</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4003209229538</PosxNode>
+              <PosyNode>-3,69304103271516</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>047</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>4757</Node>
+              <Distance>8920</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4010151013699</PosxNode>
+              <PosyNode>-3,69296094838538</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>047</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>4758</Node>
+              <Distance>9004</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4017724028205</PosxNode>
+              <PosyNode>-3,69287090380387</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>047</IdLine>
+              <SecDetail>20</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>1183</Node>
+              <Distance>9042</Distance>
+              <DistStopPrev>38</DistStopPrev>
+              <Name>Pº DELICIAS-RAMIREZ DE PRADO</Name>
+              <PosxNode>40,402107362824</PosxNode>
+              <PosyNode>-3,69259976149118</PosyNode>
+            </Routes>
+          </ListRoutes>
+        </ListRouteSection>
+        <ListRouteSection>
+          <Order>3</Order>
+          <ListRoutes>
+            <Routes>
+              <IdLine>174</IdLine>
+              <SecDetail>10</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>5611</Node>
+              <Distance>0</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name>INTERCAMBIADOR PZA.DE CASTILLA</Name>
+              <PosxNode>40,4695235553361</PosxNode>
+              <PosyNode>-3,68778542580241</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>174</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>17227</Node>
+              <Distance>15</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4696676970607</PosxNode>
+              <PosyNode>-3,68778571674241</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>174</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>17373</Node>
+              <Distance>39</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4698752767234</PosxNode>
+              <PosyNode>-3,68772295516414</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>174</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>17374</Node>
+              <Distance>70</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4701549868555</PosxNode>
+              <PosyNode>-3,6876503123095</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>174</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>17375</Node>
+              <Distance>94</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4703625383659</PosxNode>
+              <PosyNode>-3,68759226812746</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>174</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>17376</Node>
+              <Distance>112</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4703204283759</PosxNode>
+              <PosyNode>-3,68709875222197</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>174</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>17377</Node>
+              <Distance>137</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4703204283759</PosxNode>
+              <PosyNode>-3,68709875222197</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>174</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>17378</Node>
+              <Distance>190</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4707897215571</PosxNode>
+              <PosyNode>-3,68695961926012</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>174</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>17380</Node>
+              <Distance>197</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4708529066798</PosxNode>
+              <PosyNode>-3,6869390295865</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>174</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>17381</Node>
+              <Distance>284</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4716199189977</PosxNode>
+              <PosyNode>-3,68672860942043</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>174</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>17382</Node>
+              <Distance>296</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4717191938114</PosxNode>
+              <PosyNode>-3,68669894967533</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>174</IdLine>
+              <SecDetail>10</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>1487</Node>
+              <Distance>436</Distance>
+              <DistStopPrev>140</DistStopPrev>
+              <Name>Pº CASTELLANA-JOSE VASCONCELOS</Name>
+              <PosxNode>40,4729382095665</PosxNode>
+              <PosyNode>-3,68622652014129</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>174</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>17383</Node>
+              <Distance>448</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4730637880891</PosxNode>
+              <PosyNode>-3,68631863397295</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>174</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>17385</Node>
+              <Distance>543</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4739116367481</PosxNode>
+              <PosyNode>-3,6861491326619</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>174</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>17386</Node>
+              <Distance>609</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,474488980578</PosxNode>
+              <PosyNode>-3,6860193436587</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>174</IdLine>
+              <SecDetail>10</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>1488</Node>
+              <Distance>682</Distance>
+              <DistStopPrev>73</DistStopPrev>
+              <Name>Pº CASTELLANA-MQUES.TORRELAGUNA</Name>
+              <PosxNode>40,4750955609976</PosxNode>
+              <PosyNode>-3,68551705970065</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>174</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>17387</Node>
+              <Distance>714</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4754271577822</PosxNode>
+              <PosyNode>-3,68580946412419</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>174</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>17388</Node>
+              <Distance>756</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4757970626735</PosxNode>
+              <PosyNode>-3,68571884965334</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>174</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>17389</Node>
+              <Distance>763</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4758602405441</PosxNode>
+              <PosyNode>-3,68569943700809</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>174</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>17390</Node>
+              <Distance>775</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4759595220471</PosxNode>
+              <PosyNode>-3,68566859430501</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>174</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>17391</Node>
+              <Distance>796</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4761489436546</PosxNode>
+              <PosyNode>-3,68562923060183</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>174</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>17392</Node>
+              <Distance>838</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4765189673225</PosxNode>
+              <PosyNode>-3,685518559836</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>174</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>17398</Node>
+              <Distance>870</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4767987178588</PosxNode>
+              <PosyNode>-3,68543882299141</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>174</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>18271</Node>
+              <Distance>878</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4768709110841</PosxNode>
+              <PosyNode>-3,68541832174439</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>174</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>18272</Node>
+              <Distance>886</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4769430973094</PosxNode>
+              <PosyNode>-3,68539900013188</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>174</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>18273</Node>
+              <Distance>909</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4771417090895</PosxNode>
+              <PosyNode>-3,68532905503682</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>174</IdLine>
+              <SecDetail>10</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>2653</Node>
+              <Distance>913</Distance>
+              <DistStopPrev>4</DistStopPrev>
+              <Name>Pº CASTELLANA-DANIEL VAZQUEZ DIAZ</Name>
+              <PosxNode>40,477160579213</PosxNode>
+              <PosyNode>-3,68518531713058</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>174</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>18274</Node>
+              <Distance>1014</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4780710581599</PosxNode>
+              <PosyNode>-3,68508839442831</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>174</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>18278</Node>
+              <Distance>1108</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4789179606103</PosxNode>
+              <PosyNode>-3,68507812703387</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>174</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>18279</Node>
+              <Distance>1157</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4793510355087</PosxNode>
+              <PosyNode>-3,68496926954313</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>174</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>18280</Node>
+              <Distance>1266</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4803075276221</PosxNode>
+              <PosyNode>-3,68470881557454</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>174</IdLine>
+              <SecDetail>10</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>3252</Node>
+              <Distance>1300</Distance>
+              <DistStopPrev>34</DistStopPrev>
+              <Name>Pº CASTELLANA Nº 292</Name>
+              <PosxNode>40,4805881998363</PosxNode>
+              <PosyNode>-3,68447334523386</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>174</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>18281</Node>
+              <Distance>1337</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4809392203119</PosxNode>
+              <PosyNode>-3,6845288225967</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>174</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>18283</Node>
+              <Distance>1376</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4812821546357</PosxNode>
+              <PosyNode>-3,68442848157775</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>174</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>18284</Node>
+              <Distance>1433</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4817784762576</PosxNode>
+              <PosyNode>-3,68428840308633</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>174</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>18285</Node>
+              <Distance>1476</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4821574439683</PosxNode>
+              <PosyNode>-3,68418842551223</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>174</IdLine>
+              <SecDetail>10</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>3253</Node>
+              <Distance>1503</Distance>
+              <DistStopPrev>27</DistStopPrev>
+              <Name>Pº CASTELLANA-HOSPITAL LA PAZ</Name>
+              <PosxNode>40,4823750841857</PosxNode>
+              <PosyNode>-3,68394758749836</PosyNode>
+            </Routes>
+          </ListRoutes>
+        </ListRouteSection>
+        <ListRouteSection>
+          <Order>5</Order>
+        </ListRouteSection>
+      </ListsRouteSection>
+    </RouteData>
+    <RouteData>
+      <IdDescripcion>ATOCHA-COLONIA SAN JOSE OBRERO * GTA.EMBAJADORES-PZA.CASTILLA * PZA.CASTILLA-SANCHINARRO</IdDescripcion>
+      <IdLinea>247 * 27 * 173</IdLinea>
+      <DescriptionRouteData>
+        <DescriptionDate>Fecha:3/5/2010</DescriptionDate>
+        <DescriptionInitTime>Hora de Salida:16:00</DescriptionInitTime>
+        <DescriptionEstimateTimeArrival>Hora estimada de llegada:17:49</DescriptionEstimateTimeArrival>
+        <Transfers>2</Transfers>
+        <LongJourney>109</LongJourney>
+      </DescriptionRouteData>
+      <ListSectionRoute>
+        <Section>
+          <Order>0</Order>
+          <WalkingLeg>
+            <SourceWalkingLeg>
+              <Name>Avenida de Rafaela Ybarra , 10</Name>
+              <CoordinatesXY>
+                <X>40,3842629936325</X>
+                <Y>-3,70999346526269</Y>
+              </CoordinatesXY>
+              <RouteDescription>Caminar 5 min</RouteDescription>
+            </SourceWalkingLeg>
+            <DestinationWalkingLeg>
+              <Name>MARCELO USERA-AV.RAFAELA YBARRA</Name>
+              <CoordinatesXY>
+                <X>40,3869594653458</X>
+                <Y>-3,71101144726443</Y>
+              </CoordinatesXY>
+            </DestinationWalkingLeg>
+          </WalkingLeg>
+        </Section>
+        <Section>
+          <Order>1</Order>
+          <BusLeg>
+            <SourceBusLeg>
+              <IdStop>2429</IdStop>
+              <NameStop>MARCELO USERA-AV.RAFAELA YBARRA</NameStop>
+              <NameStreet>Marcelo Usera, 143</NameStreet>
+              <RouteDescription>27 min en autobús hasta</RouteDescription>
+              <CoordinatesXY>
+                <X>40,3869594653458</X>
+                <Y>-3,71101144726443</Y>
+              </CoordinatesXY>
+              <LinesOfBus>
+                <Line>
+                  <IdLine>247</IdLine>
+                  <HeaderA>ATOCHA</HeaderA>
+                  <HeaderB>COLONIA SAN JOSE OBRERO</HeaderB>
+                </Line>
+                <Line>
+                  <IdLine>47</IdLine>
+                  <HeaderA>ATOCHA</HeaderA>
+                  <HeaderB>CARABANCHEL ALTO</HeaderB>
+                </Line>
+              </LinesOfBus>
+            </SourceBusLeg>
+            <DestinationBusLeg>
+              <IdStop>1183</IdStop>
+              <NameStop>Pº DELICIAS-RAMIREZ DE PRADO</NameStop>
+              <NameStreet>Pº de las Delicias frente al Nº 52</NameStreet>
+              <CoordinatesXY>
+                <X>40,4020982907822</X>
+                <Y>-3,69261027447562</Y>
+              </CoordinatesXY>
+            </DestinationBusLeg>
+          </BusLeg>
+        </Section>
+        <Section>
+          <Order>2</Order>
+          <WalkingLeg>
+            <SourceWalkingLeg>
+              <Name>Pº DELICIAS-RAMIREZ DE PRADO</Name>
+              <CoordinatesXY>
+                <X>40,4020982907822</X>
+                <Y>-3,69261027447562</Y>
+              </CoordinatesXY>
+              <RouteDescription>Caminar 2 min</RouteDescription>
+            </SourceWalkingLeg>
+            <DestinationWalkingLeg>
+              <Name>DELICIAS Nº 14</Name>
+              <CoordinatesXY>
+                <X>40,4059718805137</X>
+                <Y>-3,69266176456531</Y>
+              </CoordinatesXY>
+            </DestinationWalkingLeg>
+          </WalkingLeg>
+        </Section>
+        <Section>
+          <Order>3</Order>
+          <BusLeg>
+            <SourceBusLeg>
+              <IdStop>88</IdStop>
+              <NameStop>DELICIAS Nº 14</NameStop>
+              <NameStreet>Delicias, 14</NameStreet>
+              <RouteDescription>36 min en autobús hasta</RouteDescription>
+              <CoordinatesXY>
+                <X>40,4059718805137</X>
+                <Y>-3,69266176456531</Y>
+              </CoordinatesXY>
+              <LinesOfBus>
+                <Line>
+                  <IdLine>27</IdLine>
+                  <HeaderA>GLORIETA DE EMBAJADORES</HeaderA>
+                  <HeaderB>PLAZA DE CASTILLA</HeaderB>
+                </Line>
+              </LinesOfBus>
+            </SourceBusLeg>
+            <DestinationBusLeg>
+              <IdStop>29</IdStop>
+              <NameStop>Pº CASTELLANA-JUZGADOS</NameStop>
+              <NameStreet>Pº de la Castellana con Pza. Castilla (frente Juzgados)</NameStreet>
+              <CoordinatesXY>
+                <X>40,4669101515388</X>
+                <Y>-3,68792036669175</Y>
+              </CoordinatesXY>
+            </DestinationBusLeg>
+          </BusLeg>
+        </Section>
+        <Section>
+          <Order>4</Order>
+          <WalkingLeg>
+            <SourceWalkingLeg>
+              <Name>Pº CASTELLANA-JUZGADOS</Name>
+              <CoordinatesXY>
+                <X>40,4669101515388</X>
+                <Y>-3,68792036669175</Y>
+              </CoordinatesXY>
+              <RouteDescription>Caminar 2 min</RouteDescription>
+            </SourceWalkingLeg>
+            <DestinationWalkingLeg>
+              <Name>INTERCAMBIADOR PZA.DE CASTILLA</Name>
+              <CoordinatesXY>
+                <X>40,4695235062029</X>
+                <Y>-3,68779368263118</Y>
+              </CoordinatesXY>
+            </DestinationWalkingLeg>
+          </WalkingLeg>
+        </Section>
+        <Section>
+          <Order>5</Order>
+          <BusLeg>
+            <SourceBusLeg>
+              <IdStop>5611</IdStop>
+              <NameStop>INTERCAMBIADOR PZA.DE CASTILLA</NameStop>
+              <NameStreet>Intercambiador Pza. de Castilla superficie, dársena 42.</NameStreet>
+              <RouteDescription>36 min en autobús hasta</RouteDescription>
+              <CoordinatesXY>
+                <X>40,4695235062029</X>
+                <Y>-3,68779368263118</Y>
+              </CoordinatesXY>
+              <LinesOfBus>
+                <Line>
+                  <IdLine>173</IdLine>
+                  <HeaderA>PLAZA DE CASTILLA</HeaderA>
+                  <HeaderB>SANCHINARRO</HeaderB>
+                </Line>
+                <Line>
+                  <IdLine>174</IdLine>
+                  <HeaderA>PLAZA DE CASTILLA</HeaderA>
+                  <HeaderB>SANCHINARRO ESTE</HeaderB>
+                </Line>
+              </LinesOfBus>
+            </SourceBusLeg>
+            <DestinationBusLeg>
+              <IdStop>3253</IdStop>
+              <NameStop>Pº CASTELLANA-HOSPITAL LA PAZ</NameStop>
+              <NameStreet>Pº de la Castellana, 300</NameStreet>
+              <CoordinatesXY>
+                <X>40,4823660687977</X>
+                <Y>-3,68394867583715</Y>
+              </CoordinatesXY>
+            </DestinationBusLeg>
+          </BusLeg>
+        </Section>
+        <Section>
+          <Order>6</Order>
+          <WalkingLeg>
+            <SourceWalkingLeg>
+              <Name>Pº CASTELLANA-HOSPITAL LA PAZ</Name>
+              <CoordinatesXY>
+                <X>40,4823660687977</X>
+                <Y>-3,68394867583715</Y>
+              </CoordinatesXY>
+              <RouteDescription>Caminar 1 min</RouteDescription>
+            </SourceWalkingLeg>
+            <DestinationWalkingLeg>
+              <Name>Avenida de Manoteras , 10</Name>
+              <CoordinatesXY>
+                <X>40,4906901864709</X>
+                <Y>-3,67013290461764</Y>
+              </CoordinatesXY>
+            </DestinationWalkingLeg>
+          </WalkingLeg>
+        </Section>
+      </ListSectionRoute>
+      <ListsRouteSection>
+        <ListRouteSection>
+          <Order>1</Order>
+          <ListRoutes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>20</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>2429</Node>
+              <Distance>2374</Distance>
+              <DistStopPrev>163</DistStopPrev>
+              <Name>MARCELO USERA-AV.RAFAELA YBARRA</Name>
+              <PosxNode>40,3869594653458</PosxNode>
+              <PosyNode>-3,71101144726443</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>6536</Node>
+              <Distance>2412</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3870613034436</PosxNode>
+              <PosyNode>-3,71056598888935</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>6660</Node>
+              <Distance>2463</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3871669075286</PosxNode>
+              <PosyNode>-3,70950673723464</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>6882</Node>
+              <Distance>2503</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3872237984569</PosxNode>
+              <PosyNode>-3,7090443093142</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>6826</Node>
+              <Distance>2542</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3872523912677</PosxNode>
+              <PosyNode>-3,70878894389444</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>6835</Node>
+              <Distance>2564</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3872905261702</PosxNode>
+              <PosyNode>-3,70844649280959</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>6816</Node>
+              <Distance>2594</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3873951090086</PosxNode>
+              <PosyNode>-3,70755099100204</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>7189</Node>
+              <Distance>2671</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3874617930118</PosxNode>
+              <PosyNode>-3,70695906194617</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>20</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>2427</Node>
+              <Distance>2697</Distance>
+              <DistStopPrev>26</DistStopPrev>
+              <Name>MARCELO USERA-GABRIEL USERA</Name>
+              <PosxNode>40,3873520051471</PosxNode>
+              <PosyNode>-3,70723360876458</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>7132</Node>
+              <Distance>2721</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3875471746406</PosxNode>
+              <PosyNode>-3,70625539936277</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>11998</Node>
+              <Distance>2782</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3875471746406</PosxNode>
+              <PosyNode>-3,70625539936277</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>11939</Node>
+              <Distance>2832</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3876714819707</PosxNode>
+              <PosyNode>-3,70507733125879</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>11925</Node>
+              <Distance>2883</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3877381389939</PosxNode>
+              <PosyNode>-3,70448775339389</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>12087</Node>
+              <Distance>2933</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3878047499908</PosxNode>
+              <PosyNode>-3,70390524302077</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>20</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>2425</Node>
+              <Distance>2959</Distance>
+              <DistStopPrev>26</DistStopPrev>
+              <Name>MARCELO USERA-FERROVIARIOS</Name>
+              <PosxNode>40,3876859966855</PosxNode>
+              <PosyNode>-3,70417381189318</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>12275</Node>
+              <Distance>2983</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3878714870416</PosxNode>
+              <PosyNode>-3,70330152534443</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>12263</Node>
+              <Distance>3035</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3879380706022</PosxNode>
+              <PosyNode>-3,70272254692565</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>12215</Node>
+              <Distance>3085</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3880049874804</PosxNode>
+              <PosyNode>-3,70208819568232</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>12368</Node>
+              <Distance>3139</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3880625493163</PosxNode>
+              <PosyNode>-3,70151029949113</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>12573</Node>
+              <Distance>3189</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3881004484094</PosxNode>
+              <PosyNode>-3,70120318355238</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>20</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>2422</Node>
+              <Distance>3200</Distance>
+              <DistStopPrev>11</DistStopPrev>
+              <Name>MARCELO USERA-OLVIDO</Name>
+              <PosxNode>40,3880003186659</PosxNode>
+              <PosyNode>-3,70137298326411</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>12570</Node>
+              <Distance>3215</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3881004484094</PosxNode>
+              <PosyNode>-3,70120318355238</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>12540</Node>
+              <Distance>3270</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3887191531242</PosxNode>
+              <PosyNode>-3,70019869887635</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>12539</Node>
+              <Distance>3326</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3890464052238</PosxNode>
+              <PosyNode>-3,69971548631178</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>12688</Node>
+              <Distance>3381</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3893100185693</PosxNode>
+              <PosyNode>-3,69932704649447</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>20</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>1936</Node>
+              <Distance>3404</Distance>
+              <DistStopPrev>23</DistStopPrev>
+              <Name>MARCELO USERA-ALMENDRALES</Name>
+              <PosxNode>40,3891290785351</PosxNode>
+              <PosyNode>-3,69945242199669</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>12695</Node>
+              <Distance>3425</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3893100185693</PosxNode>
+              <PosyNode>-3,69932704649447</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>12690</Node>
+              <Distance>3437</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3893827279646</PosxNode>
+              <PosyNode>-3,69922175893043</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>12879</Node>
+              <Distance>3490</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3896919020235</PosxNode>
+              <PosyNode>-3,69874777587179</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>32967</Node>
+              <Distance>3543</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3901100941152</PosxNode>
+              <PosyNode>-3,69812292266749</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>12827</Node>
+              <Distance>3560</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3901100941152</PosxNode>
+              <PosyNode>-3,69812292266749</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>12846</Node>
+              <Distance>3576</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3902010114905</PosxNode>
+              <PosyNode>-3,69798600827919</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>12996</Node>
+              <Distance>3662</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3907191316186</PosxNode>
+              <PosyNode>-3,69722314393512</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>12995</Node>
+              <Distance>3700</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3909464185694</PosxNode>
+              <PosyNode>-3,69688144024136</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>13034</Node>
+              <Distance>3740</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3927828013374</PosxNode>
+              <PosyNode>-3,69413023977341</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>33247</Node>
+              <Distance>4011</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3929917652673</PosxNode>
+              <PosyNode>-3,69383781508336</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>33485</Node>
+              <Distance>4044</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3929917652673</PosxNode>
+              <PosyNode>-3,69383781508336</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>13329</Node>
+              <Distance>4081</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3933076009872</PosxNode>
+              <PosyNode>-3,69375150703699</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>20</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>3858</Node>
+              <Distance>4180</Distance>
+              <DistStopPrev>99</DistStopPrev>
+              <Name>Pº DELICIAS-PZA.LEGAZPI</Name>
+              <PosxNode>40,3941831596155</PosxNode>
+              <PosyNode>-3,69347180889624</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>13319</Node>
+              <Distance>4206</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3944344018831</PosxNode>
+              <PosyNode>-3,69364052767664</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>13323</Node>
+              <Distance>4267</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3949843530402</PosxNode>
+              <PosyNode>-3,69357429385891</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>33218</Node>
+              <Distance>4350</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3957326471074</PosxNode>
+              <PosyNode>-3,69348417080513</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>33219</Node>
+              <Distance>4390</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3960932707006</PosxNode>
+              <PosyNode>-3,69344073733726</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>13311</Node>
+              <Distance>4434</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3964808844983</PosxNode>
+              <PosyNode>-3,69340347203246</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>13309</Node>
+              <Distance>4497</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3970488241415</PosxNode>
+              <PosyNode>-3,69334213245561</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>20</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>1182</Node>
+              <Distance>4514</Distance>
+              <DistStopPrev>17</DistStopPrev>
+              <Name>Pº DELICIAS-ALEJANDRO FERRANT</Name>
+              <PosxNode>40,397184905676</PosxNode>
+              <PosyNode>-3,69318445051853</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>13313</Node>
+              <Distance>4614</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3993206878639</PosxNode>
+              <PosyNode>-3,69307908971934</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>13308</Node>
+              <Distance>4751</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,3993206878639</PosxNode>
+              <PosyNode>-3,69307908971934</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>20</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>5036</Node>
+              <Distance>4785</Distance>
+              <DistStopPrev>34</DistStopPrev>
+              <Name>Pº DELICIAS-TOMAS BRETON</Name>
+              <PosxNode>40,3996102457267</PosxNode>
+              <PosyNode>-3,69286759092695</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>13306</Node>
+              <Distance>4866</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4010516085605</PosxNode>
+              <PosyNode>-3,69288236844327</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>13305</Node>
+              <Distance>4943</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4018088887717</PosxNode>
+              <PosyNode>-3,6927958580265</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>29</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>13218</Node>
+              <Distance>5028</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4018088887717</PosxNode>
+              <PosyNode>-3,6927958580265</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>247</IdLine>
+              <SecDetail>20</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>1183</Node>
+              <Distance>5062</Distance>
+              <DistStopPrev>34</DistStopPrev>
+              <Name>Pº DELICIAS-RAMIREZ DE PRADO</Name>
+              <PosxNode>40,402107362824</PosxNode>
+              <PosyNode>-3,69259976149118</PosyNode>
+            </Routes>
+          </ListRoutes>
+        </ListRouteSection>
+        <ListRouteSection>
+          <Order>3</Order>
+          <ListRoutes>
+            <Routes>
+              <IdLine>173</IdLine>
+              <SecDetail>10</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>5611</Node>
+              <Distance>0</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name>INTERCAMBIADOR PZA.DE CASTILLA</Name>
+              <PosxNode>40,4695235553361</PosxNode>
+              <PosyNode>-3,68778542580241</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>173</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>37128</Node>
+              <Distance>20</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4699382444143</PosxNode>
+              <PosyNode>-3,68773893265663</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>173</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>37129</Node>
+              <Distance>45</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4699382444143</PosxNode>
+              <PosyNode>-3,68773893265663</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>173</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>37130</Node>
+              <Distance>68</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4701367805367</PosxNode>
+              <PosyNode>-3,68768197658973</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>173</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>37141</Node>
+              <Distance>87</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4703082282146</PosxNode>
+              <PosyNode>-3,6876353605826</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>173</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>37143</Node>
+              <Distance>91</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4703354850424</PosxNode>
+              <PosyNode>-3,68759671072602</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>173</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>37144</Node>
+              <Distance>105</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4703093649007</PosxNode>
+              <PosyNode>-3,68744427173832</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>173</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>37146</Node>
+              <Distance>118</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,470283251571</PosxNode>
+              <PosyNode>-3,68729065330569</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>173</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>22956</Node>
+              <Distance>191</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4717376311177</PosxNode>
+              <PosyNode>-3,68662835805097</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>173</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>22951</Node>
+              <Distance>291</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4717376311177</PosxNode>
+              <PosyNode>-3,68662835805097</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>173</IdLine>
+              <SecDetail>10</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>1487</Node>
+              <Distance>429</Distance>
+              <DistStopPrev>138</DistStopPrev>
+              <Name>Pº CASTELLANA-JOSE VASCONCELOS</Name>
+              <PosxNode>40,4729382095665</PosxNode>
+              <PosyNode>-3,68622652014129</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>173</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>22952</Node>
+              <Distance>443</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4730731397121</PosxNode>
+              <PosyNode>-3,68626092483099</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>173</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>22953</Node>
+              <Distance>603</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4744898626914</PosxNode>
+              <PosyNode>-3,68587070973495</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>173</IdLine>
+              <SecDetail>10</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>1488</Node>
+              <Distance>675</Distance>
+              <DistStopPrev>72</DistStopPrev>
+              <Name>Pº CASTELLANA-MQUES.TORRELAGUNA</Name>
+              <PosxNode>40,4750955609976</PosxNode>
+              <PosyNode>-3,68551705970065</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>173</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>23203</Node>
+              <Distance>710</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4754371810189</PosxNode>
+              <PosyNode>-3,68563850639714</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>173</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>23209</Node>
+              <Distance>779</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4768714777094</PosxNode>
+              <PosyNode>-3,68532276797695</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>173</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>23186</Node>
+              <Distance>872</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4784053971589</PosxNode>
+              <PosyNode>-3,68491836628718</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>173</IdLine>
+              <SecDetail>10</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>2653</Node>
+              <Distance>906</Distance>
+              <DistStopPrev>34</DistStopPrev>
+              <Name>Pº CASTELLANA-DANIEL VAZQUEZ DIAZ</Name>
+              <PosxNode>40,477160579213</PosxNode>
+              <PosyNode>-3,68518531713058</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>173</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>23189</Node>
+              <Distance>1045</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4785749766827</PosxNode>
+              <PosyNode>-3,68518671932932</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>173</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>23192</Node>
+              <Distance>1087</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4785749766827</PosxNode>
+              <PosyNode>-3,68518671932932</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>173</IdLine>
+              <SecDetail>10</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>3252</Node>
+              <Distance>1319</Distance>
+              <DistStopPrev>232</DistStopPrev>
+              <Name>Pº CASTELLANA Nº 292</Name>
+              <PosxNode>40,4805881998363</PosxNode>
+              <PosyNode>-3,68447334523386</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>173</IdLine>
+              <SecDetail>19</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>23197</Node>
+              <Distance>1439</Distance>
+              <DistStopPrev>0</DistStopPrev>
+              <Name />
+              <PosxNode>40,4826265026179</PosxNode>
+              <PosyNode>-3,68408818159965</PosyNode>
+            </Routes>
+            <Routes>
+              <IdLine>173</IdLine>
+              <SecDetail>10</SecDetail>
+              <OrderDetail>1</OrderDetail>
+              <Node>3253</Node>
+              <Distance>1521</Distance>
+              <DistStopPrev>82</DistStopPrev>
+              <Name>Pº CASTELLANA-HOSPITAL LA PAZ</Name>
+              <PosxNode>40,4823750841857</PosxNode>
+              <PosyNode>-3,68394758749836</PosyNode>
+            </Routes>
+          </ListRoutes>
+        </ListRouteSection>
+        <ListRouteSection>
+          <Order>5</Order>
+        </ListRouteSection>
+      </ListsRouteSection>
+    </RouteData>
+  </ListRouteData>
+</Resultado>

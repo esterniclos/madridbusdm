@@ -1,0 +1,1110 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="services.xslt"?>
+<protocol>
+    <description>
+<br/>
+    Web services for <b>EMT-REST</b> <i>(JSON)</i> Access.<br/>
+    All service Requests are called as POST, so all parameters should be added into body request.<br/>
+    Responses are JSON formatted text.<br/>
+<br/>
+    All method requests require an <i>idClient</i> and <i>passKey</i>, those values are provided by EMT upon request.<br/>
+<br/>
+    This document is divied into <a href="#messages">Message definitions</a> and <a href="#types">Type definitions</a><br/>
+<br/>
+    </description>
+	<messages>
+		<!--
+		######################################################
+		GET Calendar
+		######################################################
+		 -->
+		 <message name="GetCalendar" service="EmtBUS" method="getCalendar" type="Post" description="Get EMT Calendar for all days and line schedules for a range of dates ">
+		 	<urlPattern>
+				<url address="${ServerURL}/bus/GetCalendar.php" />
+			</urlPattern>
+			<request type="GetCalendarRequestDTO">
+				<field name="idClient" type="string" description="API client identifier"/>
+				<field name="passKey" type="string" description="API client password"/>
+				<field name="selectDateBegin" serviceName="SelectDateBegin" type="string" description="Initial date"/>
+				<field name="selectDateEnd" serviceName="SelectDateEnd" type="string" description="End date"/>
+			</request>
+			<response type="GetCalendarResponseDTO">
+				<field name="resultCode" type="int" description="Result code for operation"/>
+				<field name="resultDescription" type="string" description="Result description for operation"/>
+				<field name="resultValues" type="CalendarItemDTO*" description="List of CalendarItem"/>
+			</response>
+		 </message>
+		 <!--
+		######################################################
+		GET Groups
+		######################################################
+		 -->
+		 <message name="GetGroups" service="EmtBUS" method="getGroups" type="Post" description="Returns every line type and their details">
+		 	<urlPattern>
+				<url address="${ServerURL}/bus/GetGroups.php" />
+			</urlPattern>
+			<request type="GetGroupsRequestDTO" typeRef="true">
+			</request>
+			<response type="GetBUSGroupsResponseDTO">
+				<field name="resultCode" type="int" description="Result code for operation"/>
+				<field name="resultDescription" type="string" description="Result description for operation"/>
+				<field name="resultValues" type="GroupItemDTO*" description="List of objects GroupItem"/>
+			</response>
+		 </message>
+		 <!--
+		######################################################
+		GET List lines
+		######################################################
+		 -->
+		 <message name="GetListLines" service="EmtBUS" method="getListLines" type="Post" description="Returns lines with description and group">
+		 	<urlPattern>
+				<url address="${ServerURL}/bus/GetListLines.php" />
+			</urlPattern>
+			<request type="GetListLinesRequestDTO">
+				<field name="idClient" type="string"  description="API client identifier"/>
+				<field name="passKey" type="string" description="API client password"/>
+				<field name="selectDate" serviceName="SelectDate" type="string" description="Date with format dd/MM/yyyy, required"/>
+				<field name="lines" serviceName="Lines" type="string" description="If empty string, you get all lines, you can add more than one line separated with pipe character |"/>
+			</request>
+			<response type="GetListLinesResponseDTO">
+				<field name="resultCode" type="int" description="Result code for operation"/>
+				<field name="resultDescription" type="string" description="Result description for operation"/>
+				<field name="resultValues" type="ListLineInfoDTO*" description="List of objects ListLineInfo"/>
+			</response>
+		 </message>
+		 <!--
+		######################################################
+		GET Nodes Lines
+		######################################################
+		 -->
+		 <message name="GetNodesLines" service="EmtBUS" method="getNodesLines" type="Post" description="Returns all stop identifiers and his coordinate, name, lines and directions">
+		 	<urlPattern>
+				<url address="${ServerURL}/bus/GetNodesLines.php" />
+			</urlPattern>
+			<request type="GetNodesLinesRequestDTO">
+				<field name="idClient" type="string" description="API client identifier"/>
+				<field name="passKey" type="string" description="API client password"/>
+				<field name="nodes" serviceName="Nodes" type="string" description="NodeIds (for example StopId s) may be empty for all stops"/>
+			</request>
+			<response type="GetNodesLinesResponseDTO">
+				<field name="resultCode" type="int" description="Result code for operation"/>
+				<field name="resultDescription" type="string" description="Result description for operation"/>
+				<field name="resultValues" type="GetNodesLinesItemDTO*" description="List of GetNodesLinesItem"/>
+            </response>
+		 </message>
+		  <!--
+		######################################################
+		GET Route Lines
+		######################################################
+		 -->
+		 <message name="GetRouteLines" service="EmtBUS" method="getRouteLines" type="Post" description="Returns a line/s route with the vertex info to build the route and coordinates for stops and axes">
+		 	<urlPattern>
+				<url address="${ServerURL}/bus/GetRouteLines.php" />
+			</urlPattern>
+			<request type="GetRouteLinesRequestDTO">
+				<field name="idClient" type="string" description="API client identifier"/>
+				<field name="passKey" type="string" description="API client password"/>
+				<field name="selectDate" serviceName="SelectDate" type="string" description="Date with format dd/MM/yyyy, required"/>
+				<field name="lines" serviceName="Lines" type="string"  description="Line/s for request,required"/>
+			</request>
+			<response type="GetRouteLinesResponseDTO">
+				<field name="resultCode" type="int" description="Result code for operation"/>
+				<field name="resultDescription" type="string" description="Result description for operation"/>
+				<field name="resultValues" type="GetRouteLinesItemDTO*" description="List of GetRouteLinesItem"/>
+			</response>
+		 </message>
+		   <!--
+		######################################################
+		GET Route Lines Route
+		######################################################
+		 -->
+		 <message name="GetRouteLinesRoute" service="EmtBUS" method="getRouteLinesRoute" type="Post" description="Get line route with vertex info to build map and coordinates for Stops">
+		 	<urlPattern>
+				<url address="${ServerURL}/bus/GetRouteLinesRoute.php" />
+			</urlPattern>
+			<request type="GetRouteLinesRouteRequestDTO" typeRef="true"/>
+
+			<response type="GetRouteLinesRouteResponseDTO">
+				<field name="resultCode" type="int" description="Result code for operation"/>
+				<field name="resultDescription" type="string" description="Result description for operation"/>
+				<field name="resultValues" type="GetRouteLinesItemDTO*" description="List of GetRouteLinesItem"/>
+			</response>
+		 </message>
+		   <!--
+		######################################################
+		GET  Times Lines
+		######################################################
+		 -->
+		 <message name="GetTimesLines" service="EmtBUS" method="getTimesLines" type="Post" description="Returns current schedules for the requested lines">
+		 	<urlPattern>
+				<url address="${ServerURL}/bus/GetTimesLines.php" />
+			</urlPattern>
+			<request type="GetTimesLinesRequestDTO">
+				<field name="idClient" type="string" description="API client identifier"/>
+				<field name="passKey" type="string" description="API client password"/>
+				<field name="selectDate" serviceName="SelectDate" type="string"  description="Date with format dd/MM/yyyy"/>
+				<field name="lines" type="string"  description="Line/s for request, separated with pipe character |"/>
+			</request>
+			<response type="GetTimesLinesResponseDTO">
+				<field name="resultCode" type="int" description="Result code for operation"/>
+				<field name="resultDescription" type="string" description="Result description for operation"/>
+				<field name="resultValues" type="TimesLinesItemDTO*" description="List of TimesLinesItems"/>
+			</response>
+		 </message>
+		    <!--
+		######################################################
+		GET Time table Lines
+		######################################################
+		 -->
+		 <message name="GetTimeTableLines" service="EmtBUS" method="getTimeTableLines" type="Post">
+		 	<urlPattern>
+				<url address="${ServerURL}/bus/GetTimeTableLines.php" />
+			</urlPattern>
+			<request type="GetTimeTableLinesRequestDTO">
+				<field name="idClient" type="string" description="API client identifier"/>
+				<field name="passKey" type="string" description="API client password"/>
+				<field name="selectDate" serviceName="SelectDate" type="string"  description="Date with format dd/MM/yyyy"/>
+				<field name="lines" serviceName="Lines" type="string"  description="Line/s for request"/>
+			</request>
+			<response type="GetTimeTableLinesResponseDTO">
+        <field name="resultCode" type="int" description="Result code for operation"/>
+        <field name="resultDescription" type="string" description="Result description for operation"/>
+        <field name="resultValues" type="TimeTableLinesItemDTO*" description="List of TimesLinesItems"/>
+			</response>
+		 </message>
+
+		<!--
+		######################################################
+		GET ARRIVE CLIENT
+		######################################################
+		-->
+		<message name="GetArriveStop" service="EmtGEO" method="getArriveStop" type="Post" description="Gets bus arrive info to a target stop">
+			<urlPattern>
+				<url address="${ServerURL}/geo/GetArriveStop.php" />
+			</urlPattern>
+			<request type="GetArriveStopRequestDTO">
+				<field name="idClient" type="string" description="API client identifier"/>
+				<field name="passKey" type="string" description="API client password"/>
+				<field name="idStop" type="string" description="Stop id"/>
+				<field name="statistics" type="string" description="Private use (do not set)"/>
+				<field name="cultureInfo" type="string" description="EN|ES Language for response"/>
+			</request>
+			<response type="GetArriveStopResponseDTO">
+				<field name="arrives" type="ArriveDTO*" description="List of Arrives"/>
+			</response>
+		</message>
+
+		<!--
+		######################################################
+		GET GROUPS
+		######################################################
+		-->
+		<message name="GetGroups" service="EmtGEO" method="getGroups" type="Post" description="Return a list of groups">
+			<urlPattern>
+				<url address="${ServerURL}/geo/GetGroups.php" />
+			</urlPattern>
+			<request type="GetGroupsRequestDTO" typeRef="true">
+			</request>
+			<response type="GetGEOGroupsResponseDTO">
+				<field name="resultCode" type="int" description="Result code for operation"/>
+				<field name="resultDescription" type="string" description="Result description for operation"/>
+				<field name="resultValues" type="GroupDTO*" description="List of Groups"/>
+			</response>
+		</message>
+
+		<!--
+		######################################################
+		GET INFO LINE
+		######################################################
+		-->
+		<message name="GetInfoLine" service="EmtGEO" method="getInfoLine" type="Post" description="Returns line info in a target date">
+			<urlPattern>
+				<url address="${ServerURL}/geo/GetInfoLine.php" />
+			</urlPattern>
+			<request type="GetInfoLineRequestDTO">
+				<field name="idClient" type="string" description="API client identifier"/>
+				<field name="passKey" type="string" description="API client password"/>
+				<field name="fecha" type="string" description="Date with format dd/MM/yyyy"/>
+				<field name="line" type="string" description="Line Id for request"/>
+				<field name="statistics" type="string" description="Private use (do not set)"/>
+				<field name="cultureInfo" type="string" description="EN|ES Language for response"/>
+			</request>
+			<response type="GetInfoLineResponseDTO" typeRef="true"/>
+		</message>
+
+		<!--
+		######################################################
+		GET INFO LINE EXTEND
+		######################################################
+		-->
+		<message name="GetInfoLineExtended" service="EmtGEO" method="GetInfoLineExtended" type="Post" description="Returns line info in a target date">
+			<urlPattern>
+				<url address="${ServerURL}/geo/GetInfoLineExtend.php" />
+			</urlPattern>
+			<request type="GetInfoLineExtendRequestDTO">
+				<field name="idClient" type="string" description="API client identifier"/>
+				<field name="passKey" type="string" description="API client password"/>
+				<field name="fecha" type="string" description="Date with format dd/MM/yyyy"/>
+				<field name="line" type="string" description="Line Id for request"/>
+				<field name="statistics" type="string" description="Private use (do not set)"/>
+				<field name="cultureInfo" type="string" description="EN|ES Language for response"/>
+			</request>
+			<response type="GetInfoLineExtendResponseDTO">
+				<field name="line" serviceName="Line" type="LineDTO*" description="List of Line"/>
+			</response>
+		</message>
+
+		<!--
+		######################################################
+		GET POINTS OF INTEREST
+		######################################################
+		-->
+		<message name="GetPointsOfInterest" service="EmtGEO" method="getPointsOfInterest" type="Post" description="Returns a list of Points of Interest from a coordinate center with a target radius">
+			<urlPattern>
+				<url address="${ServerURL}/geo/GetPointsOfInterest.php" />
+			</urlPattern>
+			<request type="GetPointsOfInterestRequestDTO">
+				<field name="idClient" type="string" description="API client identifier"/>
+				<field name="passKey" type="string" description="API client password"/>
+				<field name="latitude" type="double" description="Latitude in decimal degrees"/>
+				<field name="longitude" type="double" description="Longitude in decimal degrees"/>
+				<field name="tipos" type="string" description=""/>
+				<field name="radius" serviceName="Radius" type="int" description=""/>
+				<field name="moreInfo" type="string" description=""/>
+				<field name="statistics" type="string" description="Private use (do not set)"/>
+				<field name="cultureInfo" type="string" description="EN|ES Language for response"/>
+			</request>
+			<response type="GetPointsOfInterestResponseDTO">
+				<field name="poiList" type="POIDTO*" description=""/>
+			</response>
+		</message>
+		<!--
+		######################################################
+		GET POINTS OF INTEREST TYPES
+		######################################################
+		-->
+		<message name="GetPointsOfInterestTypes" service="EmtGEO" method="getPointsOfInterestTypes" type="Post" description="Returns a list of Point of interest types">
+			<urlPattern>
+				<url address="${ServerURL}/geo/GetPointsOfInterestTypes.php" />
+			</urlPattern>
+			<request type="GetPointsOfInterestTypesRequestDTO">
+				<field name="idClient" type="string" description="API client identifier"/>
+				<field name="passKey" type="string" description="API client password"/>
+				<field name="moreInfo" type="string" description=""/>
+				<field name="statistics" type="string" description="Private use (do not set)"/>
+				<field name="cultureInfo" type="string" description="EN|ES Language for response"/>
+			</request>
+			<response type="GetPointsOfInterestTypesResponseDTO">
+				<field name="types" type="POITypeDTO*" description="List of POITypes"/>
+			</response>
+		</message>
+
+		<!--
+		######################################################
+		GET STOPS FROM STOP
+		######################################################
+		-->
+		<message name="GetStopsFromStop" service="EmtGEO" method="getStopsFromStop" type="Post" description="Returns a list of stops from a target stop with a target radius and the lines arriving to those stops.">
+			<urlPattern>
+				<url address="${ServerURL}/geo/GetStopsFromStop.php" />
+			</urlPattern>
+			<request type="GetStopsFromStopRequestDTO">
+				<field name="idClient" type="string" description="API client identifier"/>
+				<field name="passKey" type="string" description="API client password"/>
+				<field name="idStop" type="string" description="Stop Id"/>
+				<field name="radius" serviceName="Radius" type="int" description="Radius in meters"/>
+				<field name="statistics" type="string" description="Private use (do not set)"/>
+				<field name="cultureInfo" type="string" description="EN|ES Language for response"/>
+			</request>
+			<response type="GetStopsFromStopResponseDTO">
+				<field name="latitude" type="double" description="Latitude in decimal degrees"/>
+				<field name="longitude" type="double" description="Longitude in decimal degrees"/>
+				<field name="stops" type="StopDTO*" description="List of Stop"/>
+                <field name="resultCode" type="int" description="Error code"/>
+                <field name="resultDescription" type="string" description="Error message"/>
+			</response>
+		</message>
+		<!--
+		######################################################
+		GET STOPS FROM XY
+		######################################################
+		-->
+		<message name="GetStopsFromXY" service="EmtGEO" method="getStopsFromXY" type="Post" description="Returns a list of stops from a coordinate with a radius and the lines arriving to those stops">
+			<urlPattern>
+				<url address="${ServerURL}/geo/GetStopsFromXY.php" />
+			</urlPattern>
+			<request type="GetStopsFromXYRequestDTO">
+				<field name="idClient" type="string" description="API client identifier"/>
+				<field name="passKey" type="string" description="API client password"/>
+				<field name="latitude" type="double" description="Latitude in decimal degrees"/>
+				<field name="longitude" type="double" description="Longitude in decimal degrees"/>
+				<field name="radius" serviceName="Radius" type="int" description="Radius in meters"/>
+				<field name="statistics" type="string" description="Private use (do not set)"/>
+				<field name="cultureInfo" type="string" description="EN|ES Language for response"/>
+			</request>
+			<response type="GetStopsFromXYResponseDTO">
+				<field name="latitude" type="double" description="Latitude in decimal degrees"/>
+				<field name="longitude" type="double" description="Longitude in decimal degrees"/>
+				<field name="stops" serviceName="stop" type="StopDTO*" description="List of Stop"/>
+			</response>
+		</message>
+		<!--
+		######################################################
+		GET STOPS LINE
+		######################################################
+		 -->
+		<message name="GetStopsLine" service="EmtGEO" method="getStopsLine" type="Post" description="Returns a list of stops related to a line with an optional direction">
+			<urlPattern>
+				<url address="${ServerURL}/geo/GetStopsLine.php" />
+			</urlPattern>
+			<request type="GetStopsLineRequestDTO">
+				<field name="idClient" type="string" description="API client identifier"/>
+				<field name="passKey" type="string" description="API client password"/>
+				<field name="line" type="string" description="Line Id"/>
+				<field name="direction" type="string" description="Direction of line"/>
+				<field name="statistics" type="string" description="Private use (do not set)"/>
+				<field name="cultureInfo" type="string" description="EN|ES Language for response"/>
+			</request>
+			<response type="GetStopsLineResponseDTO">
+				<field name="lineId" type="string" description="Line Id"/>
+    			<field name="label" type="string" description="Label for this line"/>
+    			<field name="destination" type="string" description="Destination of line"/>
+    			<field name="incidents" type="int" description="0: No incidents, 1: Incidents"/>
+    			<field name="stops" serviceName="stop" type="StopDTO*" description="List of Stops"/>
+    			<field name="line" type="LineDTO*" description="List of Lines"/>
+			</response>
+		</message>
+
+		<!--
+		######################################################
+		GET STREET
+		######################################################
+		 -->
+		<message name="GetStreet" service="EmtGEO" method="getStreet" type="Post" description="Returns a list of EMT nodes related to a location. All EMT locations are a group of stops within a target radius and the lines related to each stop in the list">
+			<urlPattern>
+				<url address="${ServerURL}/geo/GetStreet.php" />
+			</urlPattern>
+			<request type="GetStreetRequestDTO">
+				<field name="idClient" type="string" description="API client identifier"/>
+				<field name="passKey" type="string" description="API client password"/>
+				<field name="description" type="string" description="Text to search"/>
+				<field name="streetNumber" type="string" description="Street number to search"/>
+				<field name="radius" serviceName="Radius" type="int" description="Radius in meters"/>
+				<field name="Stops" type="string" description="Stops to search"/>
+				<field name="statistics" type="string" description="Private use (do not set)"/>
+				<field name="cultureInfo" type="string" description="EN|ES Language for response"/>
+			</request>
+			<response type="GetStreetResponseDTO">
+				<field name="sites" serviceName="site" type="SiteDTO*" description="List of Sites"/>
+			</response>
+		</message>
+
+		<!--
+		######################################################
+		GET STREET FROM XY
+		######################################################
+		 -->
+		<message name="GetStreetFromXY" service="EmtGEO" method="getStreetFromXY" type="Post" description="Returns a list of stops from a target coordinate">
+			<urlPattern>
+				<url address="${ServerURL}/geo/GetStreetFromXY.php" />
+			</urlPattern>
+			<request type="GetStreetFromXYRequestDTO">
+				<field name="idClient" type="string" description="API client identifier"/>
+				<field name="passKey" type="string" description="API client password"/>
+				<field name="latitude" type="double" description="Latitude in decimal degrees"/>
+				<field name="longitude" type="double" description="Longitude in decimal degrees"/>
+				<field name="radius" serviceName="Radius" type="int" description="Radius in meters"/>
+				<field name="statistics" type="string" description="Private use (do not set)"/>
+				<field name="cultureInfo" type="string" description="EN|ES Language for response"/>
+			</request>
+			<response type="GetStreetFromXYResponseDTO">
+				<field name="site" type="SiteByXYDTO*" description="List of SitesByXY"/>
+			</response>
+		</message>
+
+
+		<!--
+		######################################################
+		GET ESTIMATES INCIDENT
+		######################################################
+		 -->
+		<message name="GetEstimatesIncident" service="EmtMedia" method="getEstimatesIncident" type="Post" description="Get estimate arrival time to stop and its related issues">
+			<urlPattern>
+				<url address="${ServerURL}/media/GetEstimatesIncident.php" />
+			</urlPattern>
+			<request type="GetEstimatesIncidentRequestDTO">
+				<field name="idClient" type="string" description="API client identifier"/>
+				<field name="passKey" type="string" description="API client password"/>
+				<field name="idStop" type="string" description="Stop Id"/>
+				<field name="idLine" type="string" description="Line Id"/>
+				<field name="text" serviceName="Text" type="string" description=""/>
+				<field name="txtStopRequiredYN" serviceName="Text_StopRequired_YN" type="string" description="Y|N Request Stop info as Text"/>
+				<field name="audioStopRequiredYN" serviceName="Audio_StopRequired_YN" type="string" description="Y|N Request Stop info as Audio"/>
+				<field name="txtEstimationRequiredYN" serviceName="Text_EstimationsRequired_YN" type="string" description="Y|N Request estimates required as Text"/>
+				<field name="audioEstimationRequiredYN" serviceName="Audio_EstimationsRequired_YN" type="string" description="Y|N Reqeust estimates required as Audio"/>
+				<field name="txtIncidencesRequiredYN" serviceName="Text_IncidencesRequired_YN" type="string" description="Y|N Request incidences required as Text"/>
+				<field name="audioIncidencesRequiredYN" serviceName="Audio_IncidencesRequired_YN" type="string" description="Y|N Request incidences required as Audio"/>
+				<field name="dateTimeReferencedIncidencesYYYYMMDD" serviceName="DateTime_Referenced_Incidencies_YYYYMMDD" type="string" description="Date to request as yyyyMMdd"/>
+				<field name="statistics" type="string" description="Private use (do not set)"/>
+				<field name="cultureInfo" type="string" description="EN|ES Language for response"/>
+			</request>
+			<response type="GetEstimatesIncidentResponseDTO">
+				<field name="errorCode" type="string" description="Error code (0 is OK)"/>
+				<field name="description" type="string" description="Response description"/>
+				<field name="stop" type="EstimateIncidentStopDTO" description="Stop Info"/>
+				<field name="arrives" type="EstimateIncidentArriveDTO" description="Arrives Info"/>
+				<field name="incident" type="EstimateIncidentDTO" description="Incident Info"/>
+			</response>
+		</message>
+
+		<!--
+		######################################################
+		GET STREET ROUTE
+		######################################################
+		 -->
+		<message name="GetStreetRoute" service="EmtMedia" method="getStreetRoute" type="Post" description="Request up to three optimal routes from one place to another using bus or walking, source and destination must be in a format known for the system, which means that should have been validated by a GetStreet call">
+			<urlPattern>
+				<url address="${ServerURL}/media/GetStreetRoute.php" />
+			</urlPattern>
+			<request type="GetStreetRouteRequestDTO">
+				<field name="idClient" type="string" description="API client identifier"/>
+				<field name="passKey" type="string" description="API client password"/>
+				<field name="latitudeFrom" type="double" description="From latitude in decimal degrees"/>
+				<field name="longitudeFrom" type="double" description="From longitude in decimal degrees"/>
+				<field name="latitudeTo" type="double" description="To latitude in decimal degrees"/>
+				<field name="longitudeTo" type="double" description="To longitude in decimal degrees"/>
+				<field name="criteriaSelection" type="string" description="11 - Minimal route time, 13 - Minimal changes, 14 - Minimal walk time"/>
+        <field name="day" type="string" description="Day for request, optional, if not set, server will use current time"/>
+        <field name="month" type="string" description="Month for request, optional, if not set, server will use current time"/>
+        <field name="year" type="string" description="Year for request, optional, if not set, server will use current time"/>
+        <field name="hour" type="string" description="Hour for request, optional, if not set, server will use current time"/>
+        <field name="minute" type="string" description="Minute for request, optional, if not set, server will use current time"/>
+        <field name="originName" type="string" description="Name of the Origin point, used for the response formatting" />
+        <field name="destinationName" type="string" description="Name of the Destination point, used for the response formatting" />
+        <field name="timeType" type="string" description="S:Departure , L:Arrive"/>
+				<field name="generarAudio" serviceName="GenerarAudio" type="string" description="1: Return audio description"/>
+			</request>
+			<response type="GetStreetRouteResponseDTO">
+				<field name="errorCode" type="string" description="Error code (0 is ok)"/>
+				<field name="description" type="string" description="Response description"/>
+				<field name="listRouteData" type="RouteDataListItemDTO*" description="Route data as list of RouteDataListItem"/>
+				<field name="POIS" type="RouteDataListPOIDTO" description="POIs in route as list of RouteDataListPOI"/>
+			</response>
+		</message>
+		<!--
+         ######################################################
+        CONFIRM SUBSCRIPTION
+         ######################################################
+		 -->
+        <message name="ConfirmSubscription" service="Client" method="confirmSubscription" type="Post" description="">
+            <urlPattern>
+				<url address="${ServerURL}/client/ConfirmSubscription.php" />
+			</urlPattern>
+            <request type="ConfirmSubscriptionRequestDTO" typeRef="true">
+            </request>
+            <response type="ClientResponseDTO" typeRef="true">
+            </response>
+        </message>
+		<!--
+         ######################################################
+         CONSULT SUBSCRIPTION
+         ######################################################
+		 -->
+		<message name="ConsultSubscription" service="Client" method="consultSubscription" type="Post" description="">
+            <urlPattern>
+				<url address="${ServerURL}/client/ConsultSubscription.php" />
+			</urlPattern>
+            <request type="DropQuerySubscriptionDTO" typeRef="true">
+            </request>
+            <response type="ClientResponseDTO" typeRef="true">
+            </response>
+
+        </message>
+		<!--
+         ######################################################
+         DROP SUBSCRIPTION
+         ######################################################
+		 -->
+		<message name="DropSubscription" service="Client" method="dropSubscription" type="Post" description="">
+            <urlPattern>
+				<url address="${ServerURL}/client/DropSubscription.php" />
+			</urlPattern>
+            <request type="DropQuerySubscriptionDTO" typeRef="true">
+            </request>
+            <response type="ClientResponseDTO" typeRef="true">
+            </response>
+        </message>
+		<!--
+         ######################################################
+         MODIFY SUBSCRIPTION
+         ######################################################
+		 -->
+		<message name="ModifySubscription" service="Client" method="modifySubscription" type="Post" description="">
+            <urlPattern>
+				<url address="${ServerURL}/client/ModifySubscription.php" />
+			</urlPattern>
+            <request type="UpdateSubscriptionDTO" typeRef="true">
+            </request>
+            <response type="ClientResponseDTO" typeRef="true">
+            </response>
+        </message>
+		<!--
+         ######################################################
+         NEW SUBSCRIPTION
+         ######################################################
+		 -->
+        <message name="NewSubscription" service="Client" method="newSubscription" type="Post" description="">
+            <urlPattern>
+				<url address="${ServerURL}/client/NewSubscription.php" />
+			</urlPattern>
+            <request type="UpdateSubscriptionDTO" typeRef="true">
+            </request>
+            <response type="ClientResponseDTO" typeRef="true">
+            </response>
+        </message>
+		<!--
+         ######################################################
+         SUGGESTIONS
+         ######################################################
+		 -->
+        <message name="SendSuggestion" service="Client" method="sendSuggestion" type="Post" description="">
+            <urlPattern>
+				<url address="${ServerURL}/client/Suggestions.php" />
+			</urlPattern>
+            <request type="SuggestionRequestDTO" typeRef="true">
+            </request>
+            <response type="ClientResponseDTO" typeRef="true">
+            </response>
+        </message>
+        <!--
+         ######################################################
+         NFC - LOGON APP
+         ######################################################
+		 -->
+        <message name="LogonAppWithWorkstation" service="Nfc" method="logonAppWithWorkstation" type="Post" description="">
+            <urlPattern>
+				<url address="${ServerURL}/nfc/security/LogonAppWithWorkStation.php" />
+			</urlPattern>
+            <request type="LogonAppWithWorkstationRequestDTO">
+               	<field name="user" serviceName="User" type="string" description="" />
+               	<field name="password" serviceName="Pwd" type="string" description="" />
+               	<field name="workstation" serviceName="WorkStation" type="string" description="" />
+               	<field name="network" serviceName="RedComercializacion" type="string" description="" />
+            </request>
+            <response type="LogonAppWithWorkstationResponseDTO">
+            	<field name="response" type="LogonAppResponseDTO" description="" />
+            	<field name="data" type="LogonAppDataDTO" description="" />
+            </response>
+        </message>
+        <!--
+         ######################################################
+         NFC - GET LIST APPS
+         ######################################################
+		 -->
+        <message name="GetListApps" service="Nfc" method="getListApps" type="Post" description="">
+            <urlPattern>
+				<url address="${ServerURL}/nfc/desfiredmz/GetListApps.php" />
+			</urlPattern>
+            <request type="GetListAppsRequestDTO">
+               	<field name="authCode" serviceName="AuthCode" type="string" description="" />
+            </request>
+            <response type="GetListAppsResponseDTO">
+            	<field name="response" type="ListAppsResponseDTO" description="" />
+            	<field name="data" type="ListAppsDataDTO*" description="" />
+            </response>
+        </message>
+        <!--
+         ######################################################
+         NFC - DESFIRE OPERATION
+         ######################################################
+     -->
+        <message name="OperationDesfire" service="Nfc" method="operationDesfire" type="Post" description="">
+            <urlPattern>
+        <url address="${ServerURL}/nfc/desfiredmz/OperationDesfire.php" />
+      </urlPattern>
+            <request type="OperationDesfireRequestDTO">
+              <field name="authCode" serviceName="AuthCode" type="string" description="" />
+              <field name="appId" serviceName="idAplication" type="string" description="" />
+              <field name="operation" serviceName="typeOperation" type="string" description="" />
+              <field name="communicationId" serviceName="idComunication" type="string" description="" />
+              <field name="serial" serviceName="serialXML" type="string" description="" />
+              <field name="param" serviceName="paramXML" type="string" description="" />
+            </request>
+            <response type="OperationDesfireResponseDTO">
+              <field name="version" type="string" description="" />
+              <field name="code" type="string" description="" />
+              <field name="description" type="string" description="" />
+              <field name="commandId" type="string" description="" />
+              <field name="data" type="string" description="" />
+              <field name="clientId" type="string" description="" />
+              <field name="totalCommands" type="int" description="" />
+            </response>
+        </message>
+
+        <!--
+         ######################################################
+         NFC - DESFIRE OPERATION
+         ######################################################
+     -->
+        <message name="CommandDesfire" service="Nfc" method="commandDesfire" type="Post" description="">
+            <urlPattern>
+        <url address="${ServerURL}/nfc/desfiredmz/CommandDesfire.php" />
+      </urlPattern>
+            <request type="CommandDesfireRequestDTO">
+              <field name="authCode" type="string" description="" />
+              <field name="code" serviceName="Code" type="string" description="" />
+              <field name="description" serviceName="Description" type="string" description="" />
+              <field name="commandId" serviceName="IdComando" type="string" description="" />
+              <field name="data" serviceName="Data" type="string" description="" />
+              <field name="clientId" serviceName="IdCliente" type="string" description="" />
+            </request>
+            <response type="CommandDesfireResponseDTO">
+              <field name="version" type="string" description="" />
+              <field name="code" type="string" description="" />
+              <field name="description" type="string" description="" />
+              <field name="commandId" type="string" description="" />
+              <field name="data" type="string" description="" />
+              <field name="clientId" type="string" description="" />
+              <field name="totalCommands" type="int" description="" />
+            </response>
+        </message>
+
+	</messages>
+
+	<!--
+	#################################################################
+	TYPES
+	#################################################################
+	 -->
+	<types>
+		<type name="ArriveDTO">
+			<field name="stopId" type="int" description="Stop Id"/>
+			<field name="lineId" type="string" description="Line Id"/>
+			<field name="isHead" type="string" description="true|false Stop is header for this line"/>
+			<field name="destination" type="string" description="Destination text"/>
+			<field name="busId" type="string" description="Bus id"/>
+			<field name="busTimeLeft" type="int" description="Time to arrive in seconds (if all 9, means more than 20 minutes) (if 0 bus in the stop)"/>
+			<field name="busDistance" type="int" description="Distance in meters"/>
+			<field name="latitude" type="double" description="Latitude in decimal degrees"/>
+			<field name="longitude" type="double" description="Longitude in decimal degrees"/>
+			<field name="busPositionType" type="int" description="Real or estimate"/>
+		</type>
+		<type name="GroupDTO">
+			 <field name="codGrupo" serviceName="CodGrupo" type="string" description=""/>
+			 <field name="codSubGrupo" serviceName="CodSubGrupo" type="string" description=""/>
+			 <field name="tipo" serviceName="Tipo" type="TypeDTO" description=""/>
+			 <field name="fechaIni" serviceName="FechaIni" type="string" description="Start date in format dd/MM/yyyy"/>
+			 <field name="fechaFin" serviceName="FechaFin" type="string" description="Start date in format dd/MM/yyyy"/>
+			 <field name="descripcion" serviceName="Descripcion" type="string" description=""/>
+			 <field name="codUsuario" serviceName="CodUsuario" type="string" description="User id"/>
+			 <field name="fechaCambio" serviceName="FechaCambio" type="string" description="Change date in format dd/MM/yyyy"/>
+		</type>
+        <type name="TypeDTO">
+        </type>
+		<type name="LineDTO">
+	         <field name="date" type="int" description="Date with format dd/MM/yyyy"/>
+	         <field name="lineId" type="string" description="Line id"/>
+	         <field name="label" type="string" description="Label"/>
+	         <field name="headerA" type="string" description="Header of line A"/>
+	         <field name="headerB" type="string" description="Header of line B"/>
+	         <field name="incidents" type="int" description="Number of incidents"/>
+	         <field name="dayType" type="DayTypeDTO*" description=""/>
+		</type>
+		<type name="DayTypeDTO">
+			<field name="dayTypeId" type="string" description=""/>
+			<field name="direction1" type="DirectionDTO" description="Direction 1"/>
+			<field name="direction2" type="DirectionDTO" description="Direction 2"/>
+		</type>
+		<type name="DirectionDTO">
+			<field name="startTime" type="string" description="Start time in HH:mm"/>
+			<field name="stopTime" type="string" description="Stop time in HH:mm"/>
+			<field name="minimumFrequency" type="string" description="Minimum frequency"/>
+			<field name="maximumFrequency" type="string" description="Maximum frequency"/>
+			<field name="frequencyDescription" type="string" description="Frequency units"/>
+		</type>
+		<type name="POIDTO">
+			<field name="attributes" type="POIAttributeDTO" description="List of POI attributes"/>
+		</type>
+		<type name="POIAttributeDTO">
+			<field name="poiId" type="string" description="POI id"/>
+			<field name="type" type="int" description="POI type"/>
+			<field name="name" type="string" description="POI name"/>
+			<field name="address" type="string" description="Address"/>
+			<field name="streetNumber" type="string" description="Street number"/>
+			<field name="phoneNumber" type="string" description="Phone number"/>
+			<field name="latitude" type="double" description="Latitude in decimal degrees"/>
+			<field name="longitude" type="double" description="Longitude in decimal degrees"/>
+		</type>
+		<type name="POITypeDTO">
+			<field name="attributes" type="POITypeAttributeDTO" description="POI info"/>
+		</type>
+		<type name="POITypeAttributeDTO">
+			<field name="type" type="string" description="POI type identifier"/>
+			<field name="name" type="string" description="POI type name"/>
+		</type>
+
+		<type name="LineInfoDTO">
+			<field name="lineId" type="string" description="Line Id"/>
+			<field name="line" type="string" description="Line Id"/>
+			<field name="label" type="string" description="Line label"/>
+      		<field name="name" type="string" description="Line name"/>
+			<field name="headerA" type="string" description="Header for direction A"/>
+			<field name="headerB" type="string" description="Header for direction B"/>
+			<field name="direction" type="string" description="Direction"/>
+			<field name="dayType" type="string" description="Type of day"/>
+			<field name="startTime" type="string" description="Start time with format HH:mm"/>
+			<field name="stopTime" type="string" description="Stop time with format HH:mm"/>
+			<field name="minimumFrequency" type="string" description="Minimun Frequency in seconds"/>
+			<field name="maximumFrequency" type="string" description="Maximum Frequency in seconds"/>
+      <field name="frequencyA" type="string" description="Frequency text when heading in direction A"/>
+      <field name="frequencyB" type="string" description="Frequency text when heading in direction B"/>
+  </type>
+		<type name="StopDTO">
+			<field name="stopId" type="string" description=""/>
+			<field name="pmv" type="int" description="Number of point of variable messaging"/>
+			<field name="name" type="string" description="Stop name"/>
+            <field name="postalAddress" serviceName="postalAddress" type="string" description="Address of the bus stop"/>
+			<field name="latitude" type="double" description="Latitude in decimal degrees"/>
+			<field name="longitude" type="double" description="Longitude in decimal degrees"/>
+			<field name="lines" serviceName="line" type="LineInfoDTO*" description="List of line information"/>
+            <field name="lineId" type="string*" description="Array of line ids"/>
+		</type>
+		<type name="SiteDTO">
+			<field name="type" type="string" description="Site type"/>
+			<field name="siteId" type="string" description="Site identifier"/>
+			<field name="description" type="string" description="POI description"/>
+			<field name="streetType" type="string" description="Street type"/>
+			<field name="numberType" type="string" description="Number type"/>
+			<field name="streetNumber" type="string" description="Street number"/>
+			<field name="zipCode" type="string" description="Zip Code"/>
+			<field name="latitude" type="double" description="Latitude in decimal degrees"/>
+			<field name="longitude" type="double" description="Longitude in decimal degrees"/>
+			<field name="poiType" type="string" description="POI Type"/>
+			<field name="poiDirection" type="string" description="POI direction"/>
+			<field name="poiStreetNumber" type="string" description="POI street number"/>
+			<field name="poiPhoneNumber" type="string" description="POI phone number"/>
+            <field name="stops" serviceName="stop" type="StopDTO*" description="List Stop items"/>
+		</type>
+		<type name="SiteByXYDTO">
+			<field name="attributes" type="SiteByXYAttributeDTO" description=""/>
+		</type>
+		<type name="SiteByXYAttributeDTO">
+			<field name="latitude" type="double" description="Latitude in decimal degrees"/>
+			<field name="longitude" type="double" description="Longitude in decimal degrees"/>
+			<field name="streetType" type="string" description="Street type"/>
+			<field name="streetName" type="string" description="Street name"/>
+			<field name="name" type="string" description="Site name"/>
+			<field name="number" type="string" description="Site number"/>
+		</type>
+		<type name="EstimateIncidentStopDTO">
+			<field name="label" type="string" description="Incident Label"/>
+			<field name="description" type="string" description="Indicent Description"/>
+			<field name="direction" type="string" description="Direction"/>
+			<field name="audio" type="string" description="Audio for incidence"/>
+			<field name="stopLines" type="EstimateIncidentStopLineDTO" description=""/>
+		</type>
+		<type name="EstimateIncidentStopLineDTO">
+			<field name="data" type="EstimateIncidentStopLineDataDTO*" description=""/>
+		</type>
+		<type name="EstimateIncidentStopLineDataDTO">
+			<field name="label" type="string" description="Stop incident label"/>
+			<field name="description" type="string" description="Stop incident description"/>
+			<field name="audio" type="string" description="Audio for incidence"/>
+		</type>
+		<type name="EstimateIncidentArriveDTO">
+			<field name="arriveEstimationList" type="EstimateIncidentListArriveDTO" description="Arrive estimations"/>
+			<field name="audioEstimationList" type="EstimateIncidentListAudioDTO" description="Audio estimations"/>
+		</type>
+		<type name="EstimateIncidentListArriveDTO">
+			<field name="arrive" type="ArriveDTO*" description="Incident estimate arrive"/>
+		</type>
+
+
+
+		<type name="EstimateIncidentListAudioDTO">
+			<field name="listen" type="ListenDTO*" description="List of audio info"/>
+		</type>
+
+
+		<type name="EstimateIncidentDTO">
+			<field name="lastBuildDate" type="string" description="Publish date"/>
+			<field name="incidentList" type="IncidentDTO*" description="Incident list"/>
+		</type>
+		<type name="IncidentDTO">
+			<field name="data" type="IncidentDataDTO*" description="Incident data"/>
+		</type>
+		<type name="IncidentDataDTO">
+			<field name="description" type="string" description="Description"/>
+			<field name="audio" type="string" description="Audio for incidence"/>
+		</type>
+		<type name="RouteDataListItemDTO">
+			<field name="routeData" type="RouteDataDTO" description="Route data"/>
+		</type>
+		<type name="RouteDataDTO">
+			<field name="lineDescription" type="string" description="Line description"/>
+			<field name="lineId" type="string" description="Line id"/>
+			<field name="descriptionRouteData" type="DescriptionRouteDataDTO" description="Route description data"/>
+			<field name="listSectionRoute" type="SectionInfo" description="Route Sections"/>
+			<field name="routeSectionLists" type="ListRouteSectionInfo" description="Route Section List"/>
+		</type>
+
+		<type name="SectionInfo">
+			<field name="sections" serviceName="section" type="SectionDTO*" description="Route Sections"/>
+		</type>
+
+		<type name="ListRouteSectionInfo">
+			<field name="routeSectionList" serviceName="routeSectionList" type="ListRouteSectionDTO*" description="Route Section List"/>
+		</type>
+
+		<type name="DescriptionRouteDataDTO">
+			<field name="descriptionDate" type="string" description="Route date"/>
+			<field name="descriptionInitTime" type="string" description="Route Start time"/>
+			<field name="descriptionEstimateArrivalTime" type="string" description="Route end time"/>
+			<field name="transfers" type="string" description="Number of transfers"/>
+			<field name="longJourney" type="string" description="Route duration"/>
+		</type>
+
+		<type name="SectionDTO">
+			<field name="order" type="int" description="Order Id"/>
+			<field name="walkingLeg" type="WalkingLegInfoDTO" description="Info for walking section"/>
+			<field name="busLeg" type="BusLegInfoDTO" description="Info for bus section"/>
+		</type>
+
+		<type name="BusLegInfoDTO">
+			<field name="sourceBusLeg" type="BusLegDTO" description="Bus section start"/>
+			<field name="destinationBusLeg" type="BusLegDTO" description="Bus section end"/>
+		</type>
+		<type name="BusLegDTO">
+			<field name="stopId" type="string" description="Stop Id"/>
+			<field name="stopName" type="string" description="Stop name"/>
+			<field name="streetName" type="string" description="Street name"/>
+			<field name="routeDescription" type="string" description="Route description"/>
+			<field name="coordinates" type="CoordinateDTO" description="Bus coordinate"/>
+			<field name="busLines" type="BusLegLineDTO" description="Bus line info"/>
+			<field name="timeToSpend" type="int" description="Time to spend in minutes"/>
+		</type>
+		<type name="BusLegLineDTO">
+			<field name="lineId" type="string" description="Line Id"/>
+			<field name="headerA" type="string" description="Header direction A"/>
+			<field name="headerB" type="string" description="Header direction B"/>
+		</type>
+		<type name="WalkingLegInfoDTO">
+			<field name="sourceWalkingLeg" type="WalkingLegDTO" description="Walking section start"/>
+			<field name="destinationWalkingLeg" type="WalkingLegDTO" description="Walking section end"/>
+		</type>
+		<type name="WalkingLegDTO">
+			<field name="name" type="string" description="Section description"/>
+			<field name="coordinates" type="CoordinateDTO" description="Walking coordinate"/>
+			<field name="routeDescription" type="string" description="Route description"/>
+			<field name="timeToSpend" type="int" description="Time to spend in minutes"/>
+		</type>
+		<type name="CoordinateDTO">
+			<field name="latitude" type="string" description="Latitude in decimal degrees"/>
+			<field name="longitude" type="string" description="Longitude in decimal degrees"/>
+		</type>
+		<type name="RouteDataListPOIDTO">
+			<field name="poiList" type="RouteDataListItemPOIDTO" description="POI list"/>
+		</type>
+		<type name="RouteDataListItemPOIDTO">
+			<field name="poi" type="RoutePOIDTO*" description="List of POI data"/>
+		</type>
+		<type name="RoutePOIDTO">
+			<field name="poiId" type="string" description="POI id"/>
+			<field name="type" type="int" description="POI type"/>
+			<field name="subType" type="string" description="POI Subtype"/>
+			<field name="name" type="string" description="Route name"/>
+			<field name="address" type="string" description="POI Address"/>
+			<field name="streetName" type="string" description="Street name"/>
+			<field name="phoneNumber" type="string" description="Phone number"/>
+			<field name="latitude" type="double" description="Latitude in decimal degrees"/>
+			<field name="longitude" type="double" description="Longitude in decimal degrees"/>
+		</type>
+		<type name="ListRouteSectionDTO">
+			<field name="order" type="string" description=""/>
+			<field name="routeList" type="RouteList" description=""/>
+		</type>
+		<type name="RouteList">
+			<field name="routes" type="RouteSectionDTO*" description=""/>
+		</type>
+		<type name="RouteSectionDTO">
+			<field name="lineId" type="string" description="Line id (-1.- Walking route)"/>
+			<field name="secDetail" type="int" description="Section details (-1.- Walking route, 10.- Node is a Stop in forward direction
+, 19.- Node is a corner in forward route (not a Stop) ,20.- Node is a stop in return direction ,29.- Node is a corner in return direction (not a Stop))"/>
+			<field name="orderDetail" type="int" description="Order details (not used)"/>
+			<field name="node" type="string" description="Node id"/>
+			<field name="distance" type="double" description="Distance in meters from route start"/>
+			<field name="distancePreviousStop" type="double" description="Distance to previous Stop in meters (not used)"/>
+			<field name="latitude" type="double" description="Latitude in decimal degrees"/>
+			<field name="longitude" type="double" description="Longitude in decimal degrees"/>
+			<field name="listen" type="ListenDTO" description="Audio info"/>
+			<field name="name" type="string" description="Node name"/>
+		</type>
+		<type name="ListenDTO">
+            <field name="audio" type="string" description="Single audio URL"/>
+			<field name="audio1" type="string" description="Audio URL 1"/>
+			<field name="audio2" type="string" description="Audio URL 2"/>
+			<field name="audio3" type="string" description="Audio URL 3"/>
+			<field name="audio4" type="string" description="Audio URL 4"/>
+			<field name="audio5" type="string" description="Audio URL 5"/>
+		</type>
+        <type name="CalendarItemDTO">
+            <field name="date" type="int" description="Date milliseconds since 1/1/1970"/>
+            <field name="dayTypeMo" type="string" description=""/>
+            <field name="dayTypeEs" type="string" description=""/>
+            <field name="seasonTG" type="string" description=""/>
+            <field name="seasonTU" type="string" description=""/>
+            <field name="dayTypeLT" type="string" description=""/>
+            <field name="strike" type="string" description=""/>
+            <field name="dayOfWeek" type="string" description=""/>
+            <field name="dayTypePF" type="string" description=""/>
+            <field name="dayTypeCO" type="string" description=""/>
+            <field name="week" type="int" description="Week"/>
+            <field name="month" type="int" description="Month"/>
+            <field name="trimester" type="int" description="Trimester"/>
+            <field name="quarter" type="int" description="Quarter"/>
+            <field name="semester" type="int" description="Semester"/>
+            <field name="year" type="int" description="Year"/>
+            <field name="weather" type="string" description="Weather"/>
+            <field name="maxTemperatureCelsius" type="double" description="Max temperature (celsius)"/>
+            <field name="minTemperatureCelsius" type="double" description="Min temperature (celsius)"/>
+		</type>
+		<type name="GroupItemDTO">
+			<field name="groupId" type="int" description="Group Id"/>
+            <field name="groupDescription" type="string" description="Group description"/>
+		</type>
+		<type name="GetNodesLinesItemDTO">
+			<field name="node" type="int" description="Node id"/>
+            <field name="name" type="string" description="Node name"/>
+            <field name="lines" type="string*" description="Line ids, format is N/m being N the line name and m a value 1 if forward or 2 if backward"/>
+            <field name="latitude" type="double" description="Latitude in decimal degrees"/>
+            <field name="longitude" type="double" description="Longitude in decimal degrees"/>
+		</type>
+
+        <type name="GetRouteLinesItemDTO">
+            <field name="line" type="string" description="lineId"/>
+            <field name="secDetail" type="int" description="10 if this is a stop node in line forward direction, 19 if this is a vertex node in line forward direction, 20 if this is a stop node in line backwards direction,29 if this is a vertex node in backwards direction"/>
+            <field name="orderDetail" type="int" description="Not used"/>
+            <field name="node" type="string" description="Node id"/>
+            <field name="distance" type="double" description="Distance to origin"/>
+            <field name="distPreviousStop" type="double" description="Not used"/>
+            <field name="name" type="string" description="Stop name"/>
+            <field name="latitude" type="double" description="latitude in decimal degrees"/>
+            <field name="longitude" type="double" description="longitude in decimal degrees"/>
+
+        </type>
+        <type name="GetRouteLinesRouteRequestDTO">
+            <field name="idClient" type="string" description="API client identifier"/>
+            <field name="passKey" type="string" description="API client password"/>
+            <field name="selectDate" serviceName="SelectDate" type="string"  description="Date with format dd/MM/yyyy"/>
+            <field name="lines" serviceName="Lines" type="string" description=""/>
+        </type>
+        <type name="GetGroupsRequestDTO">
+            <field name="idClient" type="string" description="API client identifier"/>
+            <field name="passKey" type="string" description="API client password"/>
+            <field name="statistics" type="string" description="Private use (do not set)"/>
+            <field name="cultureInfo" type="string" description="EN|ES Language for response"/>
+        </type>
+        <type name="GetInfoLineResponseDTO">
+            <field name="lines" serviceName="Line" type="LineDTO*" description="List of Line info"/>
+        </type>
+        <type name="ListLineInfoDTO">
+            <field name="groupNumber" type="int" description="group id"/>
+            <field name="dateFirst" type="string" description="First date in fromat dd/MM/yyyy"/>
+            <field name="dateEnd" type="string" description="Last date in format dd/MM/yyyy"/>
+            <field name="line" type="string" description="Line id"/>
+            <field name="label" type="string" description="Line label"/>
+            <field name="nameA" type="string" description="Line name when direction is A"/>
+            <field name="nameB" type="string" description="Line name when direction is B"/>
+        </type>
+        <type name="TimesLinesItemDTO">
+            <field name="dateFirst" type="string" description="Date with format dd/MM/yyyy"/>
+            <field name="dateEnd" type="string" description="Date with format dd/MM/yyyy"/>
+            <field name="typeDay" type="string" description="FE:Festive | SA:Saturday | V: Friday | LA: Labour day"/>
+            <field name="timeFirstA" type="string" description="Start time in forward direction, with format: dd/MM/yyyy H:mm:ss"/>
+            <field name="timeFirstB" type="string" description="Start time in backwards direction, with format: dd/MM/yyyy H:mm:ss"/>
+            <field name="timeEndA" type="string" description="End time in forward direction, with format: dd/MM/yyyy H:mm:ss"/>
+            <field name="timeEndB" type="string" description="End time in backwards direction, with format: dd/MM/yyyy H:mm:ss"/>
+        </type>
+        <type name="TimeTableLinesItemDTO">
+            <field name="date" type="string" description="Date with format dd/MM/yyyy"/>
+            <field name="typeDay" type="string" description="FE:Festive | SA:Saturday | V: Friday | LA: Labour day"/>
+            <field name="line" type="string" description="Line id"/>
+            <field name="direction" type="string" description="Line direction"/>
+            <field name="trip" type="string" description=""/>
+            <field name="timeFirst" type="string" description="Start time with format: dd/MM/yyyy H:mm:ss"/>
+            <field name="timeEnd" type="string" description="End time with format: dd/MM/yyyy H:mm:ss"/>
+        </type>
+        <type name="ClientResponseDTO">
+            <field name="codError" type="string" description="Error code"/>
+            <field name="description" type="string" description="Response description"/>
+            <field name="comments" type="string" description="Response comments"/>
+        </type>
+        <type name="UpdateSubscriptionDTO">
+            <field name="idClient" type="string" description="API client identifier"/>
+            <field name="passKey" type="string" description="API client password"/>
+            <field name="statistics" type="string" description="Private use (do not set)"/>
+            <field name="cultureInfo" type="string" description="EN|ES Language for response"/>
+            <field name="clientType" type="string" description="Value: viajero"/>
+            <field name="NIC" type="string" description=""/>
+            <field name="PIN" type="string" description=""/>
+            <field name="preferredChannel" type="string" description="Preferred channel SMS, EMAIL, TOKEN"/>
+            <field name="email" type="string" description="Email address"/>
+            <field name="phone" type="string" description="Phone number"/>
+            <field name="idToken" type="string" description="Token id"/>
+            <field name="udid" type="string" description="Identifier"/>
+            <field name="otherInfDiurnal" type="string" description=""/>
+            <field name="otherInfNocturnal" type="string" description=""/>
+            <field name="xmlLines" type="string" description=""/>
+        </type>
+        <type name="SuggestionRequestDTO">
+            <field name="idClient" type="string" description="API client identifier"/>
+            <field name="passKey" type="string" description="API client password"/>
+            <field name="statistics" type="string" description="Private use (do not set)"/>
+            <field name="cultureInfo" type="string" description="EN|ES Language for response"/>
+            <field name="clientType" type="string" description="Value: viajero"/>
+            <field name="name" type="string" description="First name"/>
+            <field name="lastName" type="string" description="Last name"/>
+            <field name="email" type="string" description="Email address"/>
+            <field name="phone" type="string" description="Phone number"/>
+            <field name="preferredChannel" type="string" description="Preferred channel TELEFONO, EMAIL"/>
+            <field name="text" type="string" description="Suggestion text"/>
+            <field name="subject" type="string" description="Suggestion subject"/>
+        </type>
+        <type name="ConfirmSubscriptionRequestDTO">
+            <field name="idClient" type="string" description="API client identifier"/>
+            <field name="passKey" type="string" description="API client password"/>
+            <field name="statistics" type="string" description="Private use (do not set)"/>
+            <field name="cultureInfo" type="string" description="EN|ES Language for response"/>
+            <field name="clientType" type="string" description="Value: viajero"/>
+            <field name="confirmationCode" type="string" description="Confirmation code"/>
+        </type>
+        <type name="DropQuerySubscriptionDTO">
+            <field name="idClient" type="string" description="API client identifier"/>
+            <field name="passKey" type="string" description="API client password"/>
+            <field name="statistics" type="string" description="Private use (do not set)"/>
+            <field name="cultureInfo" type="string" description="EN|ES Language for response"/>
+            <field name="clientType" type="string" description="Value: viajero"/>
+            <field name="NIC" type="string" description=""/>
+            <field name="PIN" type="string" description=""/>
+        </type>
+        <type name="LogonAppResponseDTO">
+        	<field name="returnCode" type="string" description="Return code (0 if OK)"/>
+        	<field name="description" type="string" description="Return code description"/>
+        </type>
+        <type name="LogonAppDataDTO">
+        	<field name="authCode" type="string" description="Authorization token"/>
+        	<field name="logonApp" type="string" description=""/>
+        </type>
+        <type name="ListAppsResponseDTO">
+        	<field name="returnCode" type="string" description="Return code (0 if OK)"/>
+        	<field name="description" type="string" description="Return code description"/>
+        </type>
+        <type name="ListAppsDataDTO">
+        	<field name="appData" type="AppDataDTO" description="Apps data" />
+        </type>
+        <type name="AppDataDTO">
+        	<field name="appId" serviceName="idApp" type="string" description="App id" />
+        	<field name="appName" type="string" description="App name" />
+        </type>
+	</types>
+</protocol>

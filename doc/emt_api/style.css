@@ -1,0 +1,47 @@
+body {
+  font-family:"Lucida Sans Unicode", "Lucida Grande", "sans-serif"; font-size:15px; width:760px;
+}
+h1 {
+  font-family:"Lucida Sans Unicode", "Lucida Grande", "sans-serif"; text-align:right;
+    background-color:rgb(220,220,220);
+    padding-right:10px;
+}
+/** Message header **/
+h2 {
+  font-family:"Lucida Sans Unicode", "Lucida Grande", "sans-serif"; margin-top:2em; color: white; background-color:rgb(129,131,134);
+    padding-right:10px;
+}
+p {
+  
+}
+p.title {
+  font-weight:bold;
+}
+pre {
+  font-size:12px; background-color:rgb(229,229,229);
+}
+span.id {
+  font-family:monospace; font-size:13px; white-space:nowrap;
+}
+a:link,
+a:visited,
+a:hover,
+a:active { text-decoration:none; color:rgb(61,145,211); }
+table { border-collapse:collapse; }
+td.param-name,
+td.param-description { padding-bottom:10px; border-top-style:solid; border-top-width:1px; border-top-color:rgb(229,229,229); vertical-align:top; }
+td.param-name { width:240px; }
+span.param-attribute { color:rgb(129,131,134); font-size:13px; }
+div.param { padding-top:0.4em; padding-bottom:0.2em; border-bottom:1px dotted rgb(129,131,134); }
+div.param-name { float:left; }
+div.param-type { color:rgb(129,131,134); margin-left:200px; padding-bottom:0.2em; }
+div.param-desc { margin-left:200px; padding-bottom:0.2em; }
+
+table.message-table {margin-bottom:30px;background-color:#FFFFFF;}
+tr.service-header{font-size:20px;background-color:#cccccc;}
+tr.type-header{font-size:20px;background-color:#cccccc;}
+tr.service-url{font-size:16px;background-color:#dddddd;}
+tr.request-response {font-size:18px;background-color:#eeeeee;}
+td.field-type {width:200px;padding-left:10px;color:#222222;}
+td.field-name {width:200px;padding-left:10px;color:#555555;}
+td.field-description {padding-left:10px;color:#AAAAAA}
