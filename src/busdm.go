@@ -2,20 +2,24 @@ package main
 
 import (
 	"fmt"
-    // "encoding/json"
+    "encoding/json"
  //   "log"
     "net/http"
     "bytes"
 	"io/ioutil"
+    "os"
+    "io"
+    "crypto/tls"
+    "strconv"
 )
 
 
 
 // Constant
-cred_file string = "credentials.txt"
+const cred_file string = "credentials.txt"
 
 
-// Struct to store EMT  response 
+// Struct to store EMT  response
 type jsonEmt struct {
 	Arrives []struct {
 		BusDistance     int     `json:"busDistance"`
@@ -39,16 +43,15 @@ type st_walkingdistance struct {
 }
 
 type st_credentials struct {
-    ClientID String
-    Password String
-}  st_credentials;
+    ClientID string
+    Password string
+}
 
 
 
 // Opens credentials filename and stores its values.
-func readCredentials{
-
-	
+func readCredentials(filename string) st_credentials{
+    var cred st_credentials;
 
     fmt.Println ("Reading Credentials", filename)
     // open input file
@@ -65,44 +68,47 @@ func readCredentials{
 
 
    // read Credentials
-   n,err := fmt.Fscanf(fi, "%d %d \n", &cred.ClientID, &cred.Password) 
+   n,err := fmt.Fscanf(fi, "%s %s \n", &cred.ClientID, &cred.Password)
    // Error line:
    if (err != nil && err != io.EOF ) ||(n!=2){
-            panic(err)            
+            panic(err)
         }
-   
-   
-
+    return cred;
 }
 
 // Get EMT times
-func getStopTime( IdStop int){
+
+type GetStopTimeRequest struct {
+    idClient string
+    passKey string
+    cultureInfo string
+    idStop string
+}
+
+func getStopTime( IdStop int) string{
 
 
-    var url string ; 
-    url = "https://openbus.emtmadrid.es:9443/emt-proxy-server/last/geo/GetArriveStop.php"
-  
-  
+    creds := readCredentials(cred_file)
+    url := "https://openbus.emtmadrid.es:9443/emt-proxy-server/last/geo/GetArriveStop.php"
     fmt.Println("URL:>", url)
+    jsonreq := GetStopTimeRequest{creds.ClientID,
+                              creds.Password,
+                              "ES",
+                              strconv.Itoa(IdStop)}
+    fmt.Println(jsonreq)
+    jsonStr, err := json.Marshal(jsonreq)
 
-     var jsonStr = []byte(`
-{
-    "idClient": "to be read", 
-    "passKey": "to be read",
-    "idStop": "608"
-
-}`)
-
-
-    
+    fmt.Printf("JSON:> %s\n", jsonStr)
     req, err := http.NewRequest("POST", url, bytes.NewBuffer(jsonStr))
     req.Header.Set("X-Custom-Header", "busdm")
     req.Header.Set("Content-Type", "application/json")
 
 
 
-    cfg := &tls.Config{InsecureSkipVerify: true}
-    client := &http.Client{}
+    tr := &http.Transport{
+        TLSClientConfig: &tls.Config{InsecureSkipVerify : true},
+    }
+    client := &http.Client{Transport: tr}
     resp, err := client.Do(req)
     if err != nil {
         panic(err)
@@ -113,15 +119,16 @@ func getStopTime( IdStop int){
     fmt.Println("response Headers:", resp.Header)
     body, _ := ioutil.ReadAll(resp.Body)
     fmt.Println("response Body:", string(body))
-    
+    return string(body)
 }
 
 
 
 // Response handler
 func handler(w http.ResponseWriter, r *http.Request) {
-    fmt.Fprintf(w, "Hi there, I love %s!", r.URL.Path[1:])
-    getStopArrivalTime (608);
+    body := getStopTime(608);
+    fmt.Fprintf(w, "Hi there, I love %s!", body)
+    //getStopArrivalTime (608);
 }
 
 func main() {
