@@ -3,8 +3,8 @@ package main
 import (
 	"fmt"
     "encoding/json"
- //   "log"
     "net/http"
+    "net/url"
     "bytes"
 	"io/ioutil"
     "os"
@@ -20,7 +20,7 @@ const cred_file string = "credentials.txt"
 
 
 // Struct to store EMT  response
-type jsonEmt struct {
+type GetArriveStopResponse struct {
 	Arrives []struct {
 		BusDistance     int     `json:"busDistance"`
 		BusID           string  `json:"busId"`
@@ -76,38 +76,19 @@ func readCredentials(filename string) st_credentials{
     return cred;
 }
 
-// Get EMT times
-
-type GetStopTimeRequest struct {
-    idClient string
-    passKey string
-    cultureInfo string
-    idStop string
-}
-
-func getStopTime( IdStop int) string{
-
-
+func emtRequest(path string, req_values url.Values) string {
     creds := readCredentials(cred_file)
-    url := "https://openbus.emtmadrid.es:9443/emt-proxy-server/last/geo/GetArriveStop.php"
-    fmt.Println("URL:>", url)
-    jsonreq := GetStopTimeRequest{creds.ClientID,
-                              creds.Password,
-                              "ES",
-                              strconv.Itoa(IdStop)}
-    fmt.Println(jsonreq)
-    jsonStr, err := json.Marshal(jsonreq)
+    api_url := "https://openbus.emtmadrid.es:9443/emt-proxy-server/last/" + path
+    req_values.Add("idClient", creds.ClientID)
+    req_values.Add("passKey",  creds.Password)
 
-    fmt.Printf("JSON:> %s\n", jsonStr)
-    req, err := http.NewRequest("POST", url, bytes.NewBuffer(jsonStr))
+    req, err := http.NewRequest("POST", api_url,
+                                bytes.NewBufferString(req_values.Encode()))
     req.Header.Set("X-Custom-Header", "busdm")
-    req.Header.Set("Content-Type", "application/json")
-
-
+    req.Header.Set("Content-Type", "application/x-www-form-urlencoded")
 
     tr := &http.Transport{
-        TLSClientConfig: &tls.Config{InsecureSkipVerify : true},
-    }
+            TLSClientConfig: &tls.Config{InsecureSkipVerify : true}}
     client := &http.Client{Transport: tr}
     resp, err := client.Do(req)
     if err != nil {
@@ -123,11 +104,24 @@ func getStopTime( IdStop int) string{
 }
 
 
+// Get EMT times
+func GetArriveStop(IdStop int) GetArriveStopResponse{
+
+    urlreq := url.Values{}
+    urlreq.Add("cultureInfo", "ES")
+    urlreq.Add("idStop", strconv.Itoa(IdStop))
+    data := emtRequest("geo/GetArriveStop.php", urlreq)
+    st := GetArriveStopResponse{}
+    json.Unmarshal([]byte(data), &st)
+    return st
+}
+
+
 
 // Response handler
 func handler(w http.ResponseWriter, r *http.Request) {
-    body := getStopTime(608);
-    fmt.Fprintf(w, "Hi there, I love %s!", body)
+    data := GetArriveStop(608);
+    fmt.Fprintf(w, "Hi there, I love %v!", data)
     //getStopArrivalTime (608);
 }
 
